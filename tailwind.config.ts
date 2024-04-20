@@ -13,9 +13,12 @@ const config: Config = {
             },
             fontFamily: {
                 serif: ["Playfair Display", "serif"],
-                // serif: ["EB Garamond", "serif"],
+                serif2: ["EB Garamond", "serif"],
                 // serif: ["Guyot-Text", "serif"],
                 mono: ["JetBrains Mono", "monospace"],
+            },
+            fontSize: {
+                sm: "0.8rem",
             },
         },
         screens: {
