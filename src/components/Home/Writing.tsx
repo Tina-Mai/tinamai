@@ -6,7 +6,7 @@ import { animations } from '../../constants';
 
 const Writing = () => {
     return (
-        <motion.nav animate={{ opacity: 1, x: 0 }} className='body md:space-y-15 space-y-5 pt-5 max-w-xs'>
+        <motion.div animate={{ opacity: 1, x: 0 }} className='body md:space-y-15 space-y-5 pt-5 max-w-xs'>
             <ScrambleText text='SELECTED WRITING' settings={{ speed: 0.5, tick: 8 }} />
             <motion.ul variants={animations.containerVariants} initial='hidden' animate='show' className='space-y-5'>
                 <motion.li variants={animations.itemVariants}>
@@ -31,7 +31,7 @@ const Writing = () => {
                     <p className='pb-2'>you can find other pieces of mine (particularly fiction & personal essays) published across the internet. call it a scavenger hunt or whatever.</p>
                 </motion.li>
             </motion.ul>
-        </motion.nav>
+        </motion.div>
     );
 };
 

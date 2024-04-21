@@ -40,6 +40,10 @@ export const socials = [
     },
 ]
 
+const prefersReducedMotion = () => {
+    return window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+}
+
 export const animations = {
     // variants for the list container to control children's stagger
     containerVariants: {
@@ -47,7 +51,7 @@ export const animations = {
         show: {
             opacity: 1,
             transition: {
-                delayChildren: 2,  // delay before starting to animate children
+                delayChildren: prefersReducedMotion() ? 0.5 : 2,  // delay before starting to animate children
                 staggerChildren: 0.1, // stagger the animation of children by 0.1 second each
             },
         },

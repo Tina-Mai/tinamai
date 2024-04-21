@@ -6,7 +6,7 @@ import { animations } from '../../constants';
 
 const Currently = () => {
     return (
-        <motion.nav animate={{ opacity: 1, x: 0 }} className='body md:space-y-15 space-y-5 pt-5 max-w-xs'>
+        <motion.div animate={{ opacity: 1, x: 0 }} className='body md:space-y-15 space-y-5 pt-5 max-w-xs'>
             <ScrambleText text='CURRENTLY' settings={{ speed: 0.4, tick: 10 }} />
             <motion.ul variants={animations.containerVariants} initial='hidden' animate='show' className='space-y-5'>
                 <motion.li variants={animations.itemVariants}>
@@ -40,7 +40,7 @@ const Currently = () => {
                     sometimes i write essays. other times i think about writing them and mourn that i don&apos;t have much time to write anymore.
                 </motion.li>
             </motion.ul>
-        </motion.nav>
+        </motion.div>
     );
 };
 
