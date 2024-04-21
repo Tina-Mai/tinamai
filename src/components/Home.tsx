@@ -21,18 +21,18 @@ export default function Home() {
 
                         <div className='space-y-5'>
                             <p className='font-mono text-sm'>ELSEWHERE</p>
-                            <div className='flex gap-3 items-center flex-wrap'>
-                                <a href='https://twitter.com/t1namai' target='_blank' rel='noopener noreferrer' className='space-x-1 transition-colors duration-400 hover:text-slate-300 hover:underline'>
+                            <div className='sm:block sm:-space-y-5 flex flex-wrap'>
+                                <a href='https://twitter.com/t1namai' target='_blank' rel='noopener noreferrer' className='inline pr-2 space-x-1 transition-colors duration-400 hover:text-slate-300 hover:underline'>
                                     <p className='font-mono text-sm inline'>twitter</p>
                                     <ArrowUpRightIcon className='inline wrap h-3.5 w-3.5' />
                                 </a>
-                                <p>•</p>
-                                <a href='https://linkedin.com/in/tinammai' target='_blank' rel='noopener noreferrer' className='space-x-1 transition-colors duration-400 hover:text-slate-300 hover:underline'>
+                                <p className='pr-2 sm:pr-0 sm:invisible'>•</p>
+                                <a href='https://linkedin.com/in/tinammai' target='_blank' rel='noopener noreferrer' className='inline pr-2 space-x-1 transition-colors duration-400 hover:text-slate-300 hover:underline'>
                                     <p className='font-mono text-sm inline'>linkedin</p>
                                     <ArrowUpRightIcon className='inline wrap h-3.5 w-3.5' />
                                 </a>
-                                <p>•</p>
-                                <a href='https://instagram.com/tinammai' target='_blank' rel='noopener noreferrer' className='space-x-1 transition-colors duration-400 hover:text-slate-300 hover:underline'>
+                                <p className='pr-2 sm:pr-0 sm:invisible'>•</p>
+                                <a href='https://instagram.com/tinammai' target='_blank' rel='noopener noreferrer' className='inline space-x-1 transition-colors duration-400 hover:text-slate-300 hover:underline'>
                                     <p className='font-mono text-sm inline'>instagram</p>
                                     <ArrowUpRightIcon className='inline wrap h-3.5 w-3.5' />
                                 </a>
@@ -48,8 +48,9 @@ export default function Home() {
                                 <p>
                                     <p className='text-slate-500'>01</p>
                                     <p className='pb-5'>co-founder @ Kndrd, engineering the social fabric that once only existed in institutions</p>
-                                    <div className='pb-5 items-center flex-row gap-1'>
-                                        <p className='inline'>featured 2x in Business Insider</p> <ArrowUpRightIcon className='inline wrap h-3.5 w-3.5' />
+                                    <div className='pb-5 items-center flex-row gap-1 space-x-1'>
+                                        <p className='inline'>featured 2x in Business Insider</p>
+                                        <ArrowUpRightIcon className='inline wrap h-3.5 w-3.5' />
                                     </div>
                                     <p>won Stanford's oldest & largest startup competition in consumer category</p>
                                 </p>
