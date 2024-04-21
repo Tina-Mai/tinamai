@@ -1,5 +1,5 @@
 const styles = {
-    hoverEffect: "transition-colors duration-400 hover:text-slate-300 hover:underline",
+    hoverEffect: "transition-colors duration-400 hover:underline",
 
     paddingX: "sm:px-16 px-6",
     paddingY: "sm:py-16 py-6",

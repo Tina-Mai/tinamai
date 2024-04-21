@@ -3,7 +3,7 @@ import { pastItems } from '../../constants';
 
 const Past = () => {
     return (
-        <div className='font-mono text-sm md:space-y-15 space-y-5 pt-5 max-w-xs'>
+        <div className='body md:space-y-15 space-y-5 pt-5 max-w-xs'>
             <p>SOME PAST WORK</p>
             <div className='space-y-5'>
                 {pastItems.map((item) => (

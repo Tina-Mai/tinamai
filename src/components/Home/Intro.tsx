@@ -1,6 +1,9 @@
+import React from 'react';
 import Image from 'next/image';
-import { ArrowUpRightIcon } from '@heroicons/react/24/solid';
 import styles from '../../app/styles';
+import ScrambleText from '../ScrambleText';
+import { socials } from '../../constants';
+import { ArrowUpRightIcon } from '@heroicons/react/24/solid';
 
 const Intro = () => {
     return (
@@ -14,33 +17,24 @@ const Intro = () => {
                             <p className='pr-0.5'>Tina</p>
                             <p>Mai</p>
                         </div> */}
-
-            <p className='font-mono text-sm'>eighteen. building things on the internet. currently founding consumer startup in nyc.</p>
-            <p className='font-mono text-sm'>tinamai@stanford.edu</p>
+            <ScrambleText text='eighteen. building things on the internet. currently founding consumer startup in nyc.' />
+            {/* <p ref={ref} onMouseOver={replay} onFocus={replay} className='body' /> */}
+            <p className='body'>tinamai@stanford.edu</p>
             <Image src='/profile.jpg' alt='tina mai' height={180} width={135} quality={85} />
 
+            {/* social links */}
             <div className='space-y-5'>
-                <p className='font-mono text-sm'>ELSEWHERE</p>
+                <p className='body'>ELSEWHERE</p>
                 <div className='sm:block sm:-space-y-5 flex flex-wrap'>
-                    <a href='https://twitter.com/t1namai' target='_blank' rel='noopener noreferrer' className={`inline pr-2 space-x-1 ${styles.hoverEffect}`}>
-                        <p className='font-mono text-sm inline'>twitter</p>
-                        <ArrowUpRightIcon className='inline wrap h-3.5 w-3.5' />
-                    </a>
-                    <p className='pr-2 sm:pr-0 sm:invisible'>•</p>
-                    <a href='https://linkedin.com/in/tinammai' target='_blank' rel='noopener noreferrer' className={`inline pr-2 space-x-1 ${styles.hoverEffect}`}>
-                        <p className='font-mono text-sm inline'>linkedin</p>
-                        <ArrowUpRightIcon className='inline wrap h-3.5 w-3.5' />
-                    </a>
-                    <p className='pr-2 sm:pr-0 sm:invisible'>•</p>
-                    <a href='https://instagram.com/tinammai' target='_blank' rel='noopener noreferrer' className={`inline pr-2 space-x-1 ${styles.hoverEffect}`}>
-                        <p className='font-mono text-sm inline'>instagram</p>
-                        <ArrowUpRightIcon className='inline wrap h-3.5 w-3.5' />
-                    </a>
-                    <p className='pr-2 sm:pr-0 sm:invisible'>•</p>
-                    <a href='https://drive.google.com/file/d/1ablmCsg_ozK8-yBVGRFA2BZRAR39ioop/view?usp=sharing' target='_blank' rel='noopener noreferrer' className={`inline pr-2 space-x-1 ${styles.hoverEffect}`}>
-                        <p className='font-mono text-sm inline'>resume</p>
-                        <ArrowUpRightIcon className='inline wrap h-3.5 w-3.5' />
-                    </a>
+                    {socials.map((social, index) => (
+                        <React.Fragment key={social.name}>
+                            <a href={social.url} target='_blank' rel='noopener noreferrer' className={`inline pr-2 space-x-1 ${styles.hoverEffect}`}>
+                                <ScrambleText text={social.name} className='inline' playOnStart={false} />
+                                <ArrowUpRightIcon className='inline wrap h-3.5 w-3.5' />
+                            </a>
+                            {index < socials.length - 1 && <p className='pr-2 sm:pr-0 sm:invisible'>•</p>}
+                        </React.Fragment>
+                    ))}
                 </div>
             </div>
         </div>

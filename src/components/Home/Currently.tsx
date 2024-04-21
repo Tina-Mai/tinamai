@@ -1,9 +1,10 @@
+import ScrambleText from '../ScrambleText';
 import { ArrowUpRightIcon } from '@heroicons/react/24/solid';
 import styles from '../../app/styles';
 
 const Currently = () => {
     return (
-        <div className='font-mono text-sm md:space-y-15 space-y-5 pt-5 max-w-xs'>
+        <div className='body md:space-y-15 space-y-5 pt-5 max-w-xs'>
             <p>CURRENTLY</p>
             <div className='space-y-5'>
                 <div>
@@ -12,7 +13,7 @@ const Currently = () => {
                         <p className='inline'>co-founder @</p>{' '}
                         <div className='inline-flex items-center whitespace-nowrap'>
                             <a href='https://kndrd.com' target='_blank' rel='noopener noreferrer' className={`flex items-center ${styles.hoverEffect}`}>
-                                <p className='mr-1'>Kndrd</p>
+                                <ScrambleText text='Kndrd' className='mr-1' playOnStart={false} />
                                 <ArrowUpRightIcon className='h-3.5 w-3.5' />
                             </a>
                             <p className='inline'>,</p>

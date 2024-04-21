@@ -20,3 +20,22 @@ export const pastItems = [
         description: "followed my parent's american dream of me going to a good college. made lifelong friends there. left after 10 weeks to chase a dream.",
     },
 ];
+
+export const socials = [
+    {
+        name: 'twitter',
+        url: 'https://twitter.com/t1namai',
+    },
+    {
+        name: 'linkedin',
+        url: 'https://linkedin.com/in/tinammai/',
+    },
+    {
+        name: 'instagram',
+        url: 'https://instagram.com/tinammai/',
+    },
+    {
+        name: 'resume',
+        url: 'https://drive.google.com/file/d/1ablmCsg_ozK8-yBVGRFA2BZRAR39ioop/view?usp=sharing',
+    },
+]

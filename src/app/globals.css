@@ -6,6 +6,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@tailwind variants;
 
 :root {
     --foreground-rgb: 0, 0, 0;
@@ -28,12 +29,18 @@ body {
     background: #17131d;
 }
 
+* {
+    cursor: none;
+}
+
+@layer base {
+    .body {
+        @apply font-mono text-sm;
+    }
+}
+
 @layer utilities {
     .text-balance {
         text-wrap: balance;
     }
-}
-
-* {
-    cursor: none;
 }
