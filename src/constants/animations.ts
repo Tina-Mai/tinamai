@@ -1,6 +1,12 @@
 const prefersReducedMotion = () => {
-    return window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    // ensure we are in the client environment (to avoid Vercel errors)
+    if (typeof window !== "undefined") {
+        return window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    }
+    // return a default value when not in a client environment (e.g., during SSR)
+    return false;
 }
+
 
 export const animations = {
     // variants for the list container to control children's stagger
