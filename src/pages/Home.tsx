@@ -1,11 +1,10 @@
 'use client';
 import Cursor from '../components/Cursor';
-import styles from '../app/styles';
-import { ArrowUpRightIcon } from '@heroicons/react/24/solid';
 import Intro from '../components/Home/Intro';
 import Currently from '../components/Home/Currently';
 import Past from '../components/Home/Past';
 import Writing from '../components/Home/Writing';
+import { motion } from 'framer-motion';
 
 export default function Home() {
     return (

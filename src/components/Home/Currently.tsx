@@ -5,7 +5,7 @@ import styles from '../../app/styles';
 const Currently = () => {
     return (
         <div className='body md:space-y-15 space-y-5 pt-5 max-w-xs'>
-            <p>CURRENTLY</p>
+            <ScrambleText text='CURRENTLY' replayOn={false} />
             <div className='space-y-5'>
                 <div>
                     <p className='text-slate-500'>01</p>
@@ -23,7 +23,7 @@ const Currently = () => {
                     <div className='pb-5 items-center flex-row gap-1'>
                         <p className='inline'>featured twice in</p>{' '}
                         <a href='https://kndrd.com/press' target='_blank' rel='noopener noreferrer' className={`inline items-center flex-row gap-1 space-x-1 ${styles.hoverEffect}`}>
-                            <p className='inline'>Business Insider</p>
+                            <ScrambleText text='Business Insider' className='inline' playOnStart={false} />
                             <ArrowUpRightIcon className='inline wrap h-3.5 w-3.5' />
                         </a>
                     </div>

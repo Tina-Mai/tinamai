@@ -7,6 +7,7 @@ function ScrambleText({
     settings = {},
     className = '',
     playOnStart = true,
+    replayOn = true,
 }: {
     text: string;
     settings?: {
@@ -20,6 +21,7 @@ function ScrambleText({
     };
     className?: string;
     playOnStart?: boolean;
+    replayOn?: boolean;
 }) {
     const { speed = 0.8, tick = 1, step = 2.3, scramble = 10, chance = 0.8, overdrive = false } = settings;
 
@@ -43,7 +45,7 @@ function ScrambleText({
         ref.current = node;
     };
 
-    return <p ref={setRef} onMouseOver={replay} onFocus={replay} className={`body ${className}`} />;
+    return <p ref={setRef} onMouseOver={replayOn ? replay : undefined} onFocus={replayOn ? replay : undefined} className={`body ${className}`} />;
 }
 
 export default ScrambleText;

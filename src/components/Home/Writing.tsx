@@ -1,3 +1,4 @@
+import ScrambleText from '../ScrambleText';
 import { ArrowUpRightIcon } from '@heroicons/react/24/solid';
 import styles from '../../app/styles';
 
@@ -9,7 +10,7 @@ const Writing = () => {
                 <div>
                     <p className='text-slate-500'>01</p>
                     <a href='https://www.kernelmag.io/4/chaos' target='_blank' rel='noopener noreferrer' className={`items-center flex-row space-x-1 ${styles.hoverEffect}`}>
-                        <p className='inline'>Chaos Theory</p>
+                        <ScrambleText text='Chaos Theory' className='inline' playOnStart={false} />
                         <ArrowUpRightIcon className='inline wrap h-3.5 w-3.5' />
                     </a>
                     <p className='pt-2 '>Or: On Modern Serendipity, Tech Twitter, and Luck as Agency</p>
@@ -18,7 +19,7 @@ const Writing = () => {
                 <div>
                     <p className='text-slate-500'>02</p>
                     <a href='https://uxdesign.cc/machine-learning-for-product-designers-9d4002909964' target='_blank' rel='noopener noreferrer' className={`items-center flex-row space-x-1 ${styles.hoverEffect}`}>
-                        <p className='inline'>Deconstructing machine learning for product design</p>
+                        <ScrambleText text='Deconstructing machine learning for product design' className='inline' playOnStart={false} />
                         <ArrowUpRightIcon className='inline wrap h-3.5 w-3.5' />
                     </a>
                     <p className='italic pt-5 pb-2'>UX Collective (2022)</p>

@@ -18,7 +18,6 @@ const Intro = () => {
                             <p>Mai</p>
                         </div> */}
             <ScrambleText text='eighteen. building things on the internet. currently founding consumer startup in nyc.' />
-            {/* <p ref={ref} onMouseOver={replay} onFocus={replay} className='body' /> */}
             <p className='body'>tinamai@stanford.edu</p>
             <Image src='/profile.jpg' alt='tina mai' height={180} width={135} quality={85} />
 
