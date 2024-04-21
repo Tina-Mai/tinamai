@@ -23,7 +23,6 @@ export default function Home() {
                         <Past />
                         <Writing />
                     </div>
-                    ={' '}
                 </div>
             </main>
         </main>

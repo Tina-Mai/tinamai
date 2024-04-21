@@ -33,7 +33,7 @@ const Intro = () => {
                                         <ScrambleText text={social.name} className='inline' />
                                         <ArrowUpRightIcon className='inline wrap h-3.5 w-3.5' />
                                     </a>
-                                    {index < socials.length - 1 && <p className='pr-2 sm:pr-0 sm:invisible'>•</p>}
+                                    {index < socials.length - 1 && <p className='pr-2 sm:pr-0 sm:invisible sm:block inline'>•</p>}
                                 </motion.li>
                             ))}
                         </div>
