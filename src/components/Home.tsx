@@ -57,9 +57,9 @@ export default function Home() {
                         <div className='font-mono text-sm md:space-y-15 space-y-5 pt-5 max-w-xs'>
                             <p>CURRENTLY</p>
                             <div className='space-y-5'>
-                                <p>
+                                <div>
                                     <p className='text-slate-500'>01</p>
-                                    <p className='pb-5'>
+                                    <div className='pb-5'>
                                         <p className='inline'>co-founder @</p>{' '}
                                         <div className='inline-flex items-center whitespace-nowrap'>
                                             <a href='https://kndrd.com' target='_blank' rel='noopener noreferrer' className={`flex items-center ${styles.hoverEffect}`}>
@@ -69,7 +69,7 @@ export default function Home() {
                                             <p className='inline'>,</p>
                                         </div>{' '}
                                         <p className='inline'>engineering the social fabric that once only existed in institutions</p>
-                                    </p>
+                                    </div>
                                     <div className='pb-5 items-center flex-row gap-1'>
                                         <p className='inline'>featured twice in</p>{' '}
                                         <a href='https://kndrd.com/press' target='_blank' rel='noopener noreferrer' className={`inline items-center flex-row gap-1 space-x-1 ${styles.hoverEffect}`}>
@@ -78,46 +78,46 @@ export default function Home() {
                                         </a>
                                     </div>
                                     <p>won Stanford&apos;s oldest & largest startup competition in consumer category</p>
-                                </p>
-                                <p>
+                                </div>
+                                <div>
                                     <p className='text-slate-500'>02</p>
                                     studying CS & design engineering @ Stanford (on a leave of absence)
-                                </p>
-                                <p>
+                                </div>
+                                <div>
                                     <p className='text-slate-500'>03</p>
                                     sometimes i write essays. other times i think about writing them and mourn that i don&apos;t have much time to write anymore.
-                                </p>
+                                </div>
                             </div>
                         </div>
                         <div className='font-mono text-sm md:space-y-15 space-y-5 pt-5 max-w-xs'>
                             <p>SOME PAST WORK</p>
                             <div className='space-y-5'>
-                                <p>
+                                <div>
                                     <p className='text-slate-500'>01</p>
                                     won World Series of Innovation for making fintech software for the unbanked @ 15
-                                </p>
-                                <p>
+                                </div>
+                                <div>
                                     <p className='text-slate-500'>02</p>
                                     built NLP-based voice accessible app to help visually-impaired youth, awarded by U.S. Congress @ 16
-                                </p>
-                                <p>
+                                </div>
+                                <div>
                                     <p className='text-slate-500'>03</p>
                                     published in the New York Times @ 16, youngest recipient of the Atlanta Review International Poetry Award, + some other awards for writing
-                                </p>
-                                <p>
+                                </div>
+                                <div>
                                     <p className='text-slate-500'>04</p>
                                     spoke at SXSW @ 17 about building a nuclear fusion reactor in the garage
-                                </p>
-                                <p>
+                                </div>
+                                <div>
                                     <p className='text-slate-500'>05</p>
                                     followed my parent&apos;s american dream of me going to a good college. made lifelong friends there. left after 10 weeks to chase a dream.
-                                </p>
+                                </div>
                             </div>
                         </div>
                         <div className='font-mono text-sm md:space-y-15 space-y-5 pt-5 max-w-xs'>
                             <p>SELECTED WRITING</p>
                             <div className='space-y-5'>
-                                <p>
+                                <div>
                                     <p className='text-slate-500'>01</p>
                                     <a href='https://www.kernelmag.io/4/chaos' target='_blank' rel='noopener noreferrer' className={`items-center flex-row space-x-1 ${styles.hoverEffect}`}>
                                         <p className='inline'>Chaos Theory</p>
@@ -125,19 +125,19 @@ export default function Home() {
                                     </a>
                                     <p className='text-sm pt-2 '>Or: On Modern Serendipity, Tech Twitter, and Luck as Agency</p>
                                     <p className='italic text-sm pt-5 pb-2'>Kernel Magazine (2024)</p>
-                                </p>
-                                <p>
+                                </div>
+                                <div>
                                     <p className='text-slate-500'>02</p>
                                     <a href='https://uxdesign.cc/machine-learning-for-product-designers-9d4002909964' target='_blank' rel='noopener noreferrer' className={`items-center flex-row space-x-1 ${styles.hoverEffect}`}>
                                         <p className='inline'>Deconstructing machine learning for product design</p>
                                         <ArrowUpRightIcon className='inline wrap h-3.5 w-3.5' />
                                     </a>
                                     <p className='italic text-sm pt-5 pb-2'>UX Collective (2022)</p>
-                                </p>
-                                <p>
+                                </div>
+                                <div>
                                     <p className='text-slate-500'>03</p>
                                     <p className='text-sm pb-2'>you can find other pieces of mine (particularly fiction & personal essays) published across the internet. call it a scavenger hunt or whatever.</p>
-                                </p>
+                                </div>
                             </div>
                         </div>
                     </div>
