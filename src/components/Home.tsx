@@ -21,17 +21,20 @@ export default function Home() {
 
                         <div className='space-y-5'>
                             <p className='font-mono text-sm'>ELSEWHERE</p>
-                            <div className='flex gap-3 items-center'>
-                                <a href='https://twitter.com/t1namai' target='_blank' rel='noopener noreferrer' className='transition-colors duration-400 hover:text-slate-300 hover:underline'>
-                                    <p className='font-mono text-sm'>twitter</p>
+                            <div className='flex gap-3 items-center flex-wrap'>
+                                <a href='https://twitter.com/t1namai' target='_blank' rel='noopener noreferrer' className='space-x-1 transition-colors duration-400 hover:text-slate-300 hover:underline'>
+                                    <p className='font-mono text-sm inline'>twitter</p>
+                                    <ArrowUpRightIcon className='inline wrap h-3.5 w-3.5' />
                                 </a>
                                 <p>•</p>
-                                <a href='https://linkedin.com/in/tinammai' target='_blank' rel='noopener noreferrer' className='transition-colors duration-400 hover:text-slate-300 hover:underline'>
-                                    <p className='font-mono text-sm'>linkedin</p>
+                                <a href='https://linkedin.com/in/tinammai' target='_blank' rel='noopener noreferrer' className='space-x-1 transition-colors duration-400 hover:text-slate-300 hover:underline'>
+                                    <p className='font-mono text-sm inline'>linkedin</p>
+                                    <ArrowUpRightIcon className='inline wrap h-3.5 w-3.5' />
                                 </a>
                                 <p>•</p>
-                                <a href='https://instagram.com/tinammai' target='_blank' rel='noopener noreferrer' className='transition-colors duration-400 hover:text-slate-300 hover:underline'>
-                                    <p className='font-mono text-sm'>instagram</p>
+                                <a href='https://instagram.com/tinammai' target='_blank' rel='noopener noreferrer' className='space-x-1 transition-colors duration-400 hover:text-slate-300 hover:underline'>
+                                    <p className='font-mono text-sm inline'>instagram</p>
+                                    <ArrowUpRightIcon className='inline wrap h-3.5 w-3.5' />
                                 </a>
                             </div>
                         </div>
@@ -45,7 +48,9 @@ export default function Home() {
                                 <p>
                                     <p className='text-slate-500'>01</p>
                                     <p className='pb-5'>co-founder @ Kndrd, engineering the social fabric that once only existed in institutions</p>
-                                    <p className='pb-5'>featured 2x in Business Insider</p>
+                                    <div className='pb-5 items-center flex-row gap-1'>
+                                        <p className='inline'>featured 2x in Business Insider</p> <ArrowUpRightIcon className='inline wrap h-3.5 w-3.5' />
+                                    </div>
                                     <p>won Stanford's oldest & largest startup competition in consumer category</p>
                                 </p>
                                 <p>
@@ -80,17 +85,29 @@ export default function Home() {
                             <div className='space-y-5'>
                                 <p>
                                     <p className='text-slate-500'>01</p>
-                                    <p className='flex pb-2 items-center flex-row wrap gap-1'>
-                                        Chaos Theory <ArrowUpRightIcon className='h-3.5 w-3.5' />
-                                    </p>
+                                    <a
+                                        href='https://www.kernelmag.io/4/chaos'
+                                        target='_blank'
+                                        rel='noopener noreferrer'
+                                        className='items-center flex-row space-x-1 transition-colors duration-400 hover:text-slate-300 hover:underline'
+                                    >
+                                        <p className='inline'>Chaos Theory</p>
+                                        <ArrowUpRightIcon className='inline wrap h-3.5 w-3.5' />
+                                    </a>
 
-                                    <p className='italic text-xs pb-2'>Or: On Modern Serendipity, Tech Twitter, and Luck as Agency</p>
+                                    <p className='italic text-xs pt-2 pb-2'>Or: On Modern Serendipity, Tech Twitter, and Luck as Agency</p>
                                 </p>
                                 <p>
                                     <p className='text-slate-500'>01</p>
-                                    <p className='flex pb-2 items-center flex-row wrap gap-1'>
-                                        Deconstructing machine learning for product design <ArrowUpRightIcon className='flex wrap h-3.5 w-3.5' />
-                                    </p>
+                                    <a
+                                        href='https://uxdesign.cc/machine-learning-for-product-designers-9d4002909964'
+                                        target='_blank'
+                                        rel='noopener noreferrer'
+                                        className='items-center flex-row space-x-1 transition-colors duration-400 hover:text-slate-300 hover:underline'
+                                    >
+                                        <p className='inline'>Deconstructing machine learning for product design</p>
+                                        <ArrowUpRightIcon className='inline wrap h-3.5 w-3.5' />
+                                    </a>
                                 </p>
                             </div>
                         </div>
