@@ -6,7 +6,6 @@ function ScrambleText({
     text,
     settings = {},
     className = '',
-    playOnStart = true,
     replayOn = true,
 }: {
     text: string;
@@ -20,7 +19,6 @@ function ScrambleText({
         overdrive?: boolean;
     };
     className?: string;
-    playOnStart?: boolean;
     replayOn?: boolean;
 }) {
     const { speed = 0.8, tick = 1, step = 2.3, scramble = 10, chance = 0.8, overdrive = false } = settings;
@@ -35,7 +33,6 @@ function ScrambleText({
         scramble,
         chance,
         overdrive,
-        playOnMount: !playOnStart ? false : true,
     };
 
     const { ref: scrambleRef, replay } = useScramble(scrambleSettings);

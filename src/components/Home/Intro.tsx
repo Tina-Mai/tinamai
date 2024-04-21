@@ -15,7 +15,7 @@ const Intro = () => {
             <motion.nav animate={{ opacity: 1, x: 0 }}>
                 <motion.ul variants={animations.containerVariants} initial='hidden' animate='show' className='space-y-10'>
                     <motion.li variants={animations.itemVariants} className='body'>
-                        tinamai@stanford.edu
+                        <ScrambleText text='tinamai@stanford.edu' />
                     </motion.li>
                     <motion.li variants={animations.itemVariants}>
                         <Image src='/profile.jpg' alt='tina mai' height={180} width={135} quality={85} />
@@ -24,13 +24,13 @@ const Intro = () => {
                     {/* social links */}
                     <div className='space-y-5'>
                         <motion.li variants={animations.itemVariants} className='body'>
-                            ELSEWHERE
+                            <ScrambleText text='ELSEWHERE' />
                         </motion.li>
                         <div className='sm:block sm:-space-y-5 flex flex-wrap'>
                             {socials.map((social, index) => (
                                 <motion.li variants={animations.itemVariants} key={social.name}>
                                     <a href={social.url} target='_blank' rel='noopener noreferrer' className={`inline pr-2 space-x-1 ${styles.hoverEffect}`}>
-                                        <ScrambleText text={social.name} className='inline' playOnStart={false} />
+                                        <ScrambleText text={social.name} className='inline' />
                                         <ArrowUpRightIcon className='inline wrap h-3.5 w-3.5' />
                                     </a>
                                     {index < socials.length - 1 && <p className='pr-2 sm:pr-0 sm:invisible'>•</p>}
