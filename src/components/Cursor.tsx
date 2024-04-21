@@ -51,12 +51,12 @@ const Cursor = () => {
             ref={cursorRef}
             src='/cursor.svg'
             alt='cursor'
+            width={30}
+            height={30}
             style={{
                 position: 'fixed', // Fixed position relative to the viewport
                 left: '0px',
                 top: '0px',
-                width: '30px',
-                height: '30px',
                 zIndex: 20,
                 pointerEvents: 'none', // Ensure the image does not interfere with other elements
                 display: 'none', // Start with cursor hidden

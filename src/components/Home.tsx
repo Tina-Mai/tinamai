@@ -19,7 +19,7 @@ export default function Home() {
 
                         <p className='font-mono text-sm'>eighteen. building things on the internet. currently a founder working on consumer in nyc.</p>
                         <p className='font-mono text-sm'>tinamai@stanford.edu</p>
-                        <Image src='/profile.jpg' alt='tina mai' className='h-40' />
+                        <Image src='/profile.jpg' alt='tina mai' height={180} width={135} quality={85} />
 
                         <div className='space-y-5'>
                             <p className='font-mono text-sm'>ELSEWHERE</p>
@@ -72,7 +72,7 @@ export default function Home() {
                                             <ArrowUpRightIcon className='inline wrap h-3.5 w-3.5' />
                                         </a>
                                     </div>
-                                    <p>won Stanford's oldest & largest startup competition in consumer category</p>
+                                    <p>won Stanford&apos;s oldest & largest startup competition in consumer category</p>
                                 </p>
                                 <p>
                                     <p className='text-slate-500'>02</p>
