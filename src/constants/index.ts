@@ -47,7 +47,7 @@ export const animations = {
         show: {
             opacity: 1,
             transition: {
-                delayChildren: 1,  // delay before starting to animate children
+                delayChildren: 2,  // delay before starting to animate children
                 staggerChildren: 0.1, // stagger the animation of children by 0.1 second each
             },
         },

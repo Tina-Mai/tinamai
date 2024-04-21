@@ -10,7 +10,7 @@ const Intro = () => {
     return (
         <div className='space-y-10'>
             <Image src='/name.svg' alt='tina mai' height={31} width={171} quality={85} />
-            <ScrambleText text='eighteen. building things on the internet. currently founding consumer startup in nyc.' />
+            <ScrambleText text='eighteen. building things on the internet. currently founding consumer startup in nyc.' settings={{ speed: 0.5 }} />
 
             <motion.nav animate={{ opacity: 1, x: 0 }}>
                 <motion.ul variants={animations.containerVariants} initial='hidden' animate='show' className='space-y-10'>

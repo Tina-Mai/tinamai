@@ -7,7 +7,7 @@ import { animations } from '../../constants';
 const Currently = () => {
     return (
         <motion.nav animate={{ opacity: 1, x: 0 }} className='body md:space-y-15 space-y-5 pt-5 max-w-xs'>
-            <ScrambleText text='CURRENTLY' />
+            <ScrambleText text='CURRENTLY' settings={{ speed: 0.4, tick: 10 }} />
             <motion.ul variants={animations.containerVariants} initial='hidden' animate='show' className='space-y-5'>
                 <motion.li variants={animations.itemVariants}>
                     <p className='text-slate-500'>01</p>
