@@ -10,9 +10,9 @@ const Intro = () => {
         <div className='space-y-10'>
             <Image src='/name.svg' alt='tina mai' height={31} width={171} quality={85} />
             {/* <div className='flex justify-start gap-3 font-serif text-4xl'>
-                            <p>Tina</p>
-                            <p className='italic'>Mai</p>
-                        </div> */}
+                <p>Tina</p>
+                <p className='italic'>Mai</p>
+            </div> */}
             {/* <div className='flex justify-start gap-3 font-serif2 tracking-tighter italic text-5xl'>
                             <p className='pr-0.5'>Tina</p>
                             <p>Mai</p>
