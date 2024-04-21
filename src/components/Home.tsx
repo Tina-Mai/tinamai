@@ -1,11 +1,12 @@
 'use client';
 import Cursor from './Cursor';
+import { ArrowUpRightIcon } from '@heroicons/react/24/solid';
 
 export default function Home() {
     return (
         <main>
             <Cursor />
-            <main className='flex min-h-screen flex-col items-center justify-between p-8'>
+            <main className='flex min-h-screen flex-col items-center justify-between xs:p-8 p-20'>
                 <div className='z-10 w-full max-w-7xl items-start justify-between sm:flex'>
                     {/* about column */}
                     <div className='sm:w-1/5 max-w-xs space-y-10 pb-20'>
@@ -42,7 +43,9 @@ export default function Home() {
                             <div className='space-y-5'>
                                 <p>
                                     <p className='text-slate-500'>01</p>
-                                    co-founder @ Kndrd, where we're engineering the social fabric that once only existed in institutions
+                                    <p className='pb-5'>co-founder @ Kndrd, engineering the social fabric that once only existed in institutions</p>
+                                    <p className='pb-5'>featured 2x in Business Insider</p>
+                                    <p>won Stanford's oldest & largest startup competition in consumer category</p>
                                 </p>
                                 <p>
                                     <p className='text-slate-500'>02</p>
@@ -55,19 +58,19 @@ export default function Home() {
                             <div className='space-y-5'>
                                 <p>
                                     <p className='text-slate-500'>01</p>
-                                    built voice-accessible app to help visually-impaired youth (VAST), awarded by U.S. Congress @ 16
+                                    won World Series of Innovation for making fintech software for the unbanked @ 15
                                 </p>
                                 <p>
                                     <p className='text-slate-500'>02</p>
-                                    won World Series of Innovation for making fintech software for the unbanked
+                                    built NLP-based voice accessible app to help visually-impaired youth, awarded by U.S. Congress @ 16
                                 </p>
                                 <p>
                                     <p className='text-slate-500'>03</p>
-                                    spoke at SXSW @ 17 about building a nuclear fusion reactor in the garage
+                                    published in the New York Times @ 16 + some other international awards for writing
                                 </p>
                                 <p>
                                     <p className='text-slate-500'>04</p>
-                                    writing published in the New York Times & UNICEF
+                                    spoke at SXSW @ 17 about building a nuclear fusion reactor in the garage
                                 </p>
                             </div>
                         </div>
@@ -76,12 +79,17 @@ export default function Home() {
                             <div className='space-y-5'>
                                 <p>
                                     <p className='text-slate-500'>01</p>
-                                    <p className='pb-2'>Chaos Theory</p>
+                                    <p className='flex pb-2 items-center flex-row wrap gap-1'>
+                                        Chaos Theory <ArrowUpRightIcon className='h-3.5 w-3.5' />
+                                    </p>
+
                                     <p className='italic text-xs pb-2'>Or: On Modern Serendipity, Tech Twitter, and Luck as Agency</p>
                                 </p>
                                 <p>
                                     <p className='text-slate-500'>01</p>
-                                    <p className='pb-2'>Deconstructing machine learning for product design</p>
+                                    <p className='flex pb-2 items-center flex-row text-wrap gap-1'>
+                                        Deconstructing machine learning for product design <ArrowUpRightIcon className='h-3.5 w-3.5' />
+                                    </p>
                                 </p>
                             </div>
                         </div>
