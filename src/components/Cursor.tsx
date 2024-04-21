@@ -55,6 +55,7 @@ const Cursor = () => {
                 top: '0px',
                 width: '30px',
                 height: '30px',
+                zIndex: 20,
                 pointerEvents: 'none', // Ensure the image does not interfere with other elements
                 display: 'none', // Start with cursor hidden
             }}
