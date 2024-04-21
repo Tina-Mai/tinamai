@@ -22,7 +22,7 @@ export default function Home() {
                             <p>Mai</p>
                         </div> */}
 
-                        <p className='font-mono text-sm'>eighteen. building things on the internet. currently a founder working on consumer in nyc.</p>
+                        <p className='font-mono text-sm'>eighteen. building things on the internet. currently founding consumer startup in nyc.</p>
                         <p className='font-mono text-sm'>tinamai@stanford.edu</p>
                         <Image src='/profile.jpg' alt='tina mai' height={180} width={135} quality={85} />
 
