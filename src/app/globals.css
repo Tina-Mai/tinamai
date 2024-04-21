@@ -37,6 +37,9 @@ body {
     .body {
         @apply font-mono text-sm;
     }
+    .link {
+        @apply underline underline-offset-4 decoration-dotted decoration-slate-500 transition-colors hover:underline;
+    }
 }
 
 @layer utilities {

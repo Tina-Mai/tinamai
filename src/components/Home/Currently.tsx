@@ -1,6 +1,5 @@
 import ScrambleText from '../ScrambleText';
 import { ArrowUpRightIcon } from '@heroicons/react/24/solid';
-import styles from '../../app/styles';
 import { motion } from 'framer-motion';
 import { animations } from '../../constants';
 
@@ -14,7 +13,7 @@ const Currently = () => {
                     <div className='pb-5'>
                         <p className='inline'>co-founder @</p>{' '}
                         <div className='inline-flex items-center whitespace-nowrap'>
-                            <a href='https://kndrd.com' target='_blank' rel='noopener noreferrer' className={`flex items-center ${styles.hoverEffect}`}>
+                            <a href='https://kndrd.com' target='_blank' rel='noopener noreferrer' className='flex items-center link'>
                                 <ScrambleText text='Kndrd' className='mr-1' />
                                 <ArrowUpRightIcon className='h-3.5 w-3.5' />
                             </a>
@@ -24,7 +23,7 @@ const Currently = () => {
                     </div>
                     <div className='pb-5 items-center flex-row gap-1'>
                         <p className='inline'>featured twice in</p>{' '}
-                        <a href='https://kndrd.com/press' target='_blank' rel='noopener noreferrer' className={`inline items-center flex-row gap-1 space-x-1 ${styles.hoverEffect}`}>
+                        <a href='https://kndrd.com/press' target='_blank' rel='noopener noreferrer' className='inline items-center flex-row gap-1 space-x-1 link'>
                             <ScrambleText text='Business Insider' className='inline' />
                             <ArrowUpRightIcon className='inline wrap h-3.5 w-3.5' />
                         </a>

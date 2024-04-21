@@ -1,6 +1,5 @@
 import React from 'react';
 import Image from 'next/image';
-import styles from '../../app/styles';
 import ScrambleText from '../ScrambleText';
 import { socials, animations } from '../../constants';
 import { ArrowUpRightIcon } from '@heroicons/react/24/solid';
@@ -29,7 +28,7 @@ const Intro = () => {
                         <div className='sm:block sm:-space-y-5 flex flex-wrap'>
                             {socials.map((social, index) => (
                                 <motion.li variants={animations.itemVariants} key={social.name}>
-                                    <a href={social.url} target='_blank' rel='noopener noreferrer' className={`inline pr-2 space-x-1 ${styles.hoverEffect}`}>
+                                    <a href={social.url} target='_blank' rel='noopener noreferrer' className='inline pr-2 space-x-1 link'>
                                         <ScrambleText text={social.name} className='inline' />
                                         <ArrowUpRightIcon className='inline wrap h-3.5 w-3.5' />
                                     </a>
