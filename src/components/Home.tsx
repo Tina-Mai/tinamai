@@ -85,7 +85,7 @@ export default function Home() {
                                 </p>
                                 <p>
                                     <p className='text-slate-500'>03</p>
-                                    sometimes i write essays. other times i think about writing them and mourn that i don't have much time to write anymore.
+                                    sometimes i write essays. other times i think about writing them and mourn that i don&apos;t have much time to write anymore.
                                 </p>
                             </div>
                         </div>
@@ -110,7 +110,7 @@ export default function Home() {
                                 </p>
                                 <p>
                                     <p className='text-slate-500'>05</p>
-                                    followed my parent's american dream of me going to a good college. made lifelong friends there. left after 10 weeks to chase a dream.
+                                    followed my parent&apos;s american dream of me going to a good college. made lifelong friends there. left after 10 weeks to chase a dream.
                                 </p>
                             </div>
                         </div>
@@ -136,7 +136,7 @@ export default function Home() {
                                 </p>
                                 <p>
                                     <p className='text-slate-500'>03</p>
-                                    <p className='text-sm pb-2'>you can find other pieces of mine (particularly fiction & poetry) published across the internet. call it a scavenger hunt or whatever.</p>
+                                    <p className='text-sm pb-2'>you can find other pieces of mine (particularly fiction & personal essays) published across the internet. call it a scavenger hunt or whatever.</p>
                                 </p>
                             </div>
                         </div>
