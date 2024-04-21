@@ -54,7 +54,7 @@ export default function Home() {
 
                     {/* 3 columns */}
                     <div className='grid mb-32 text-left sm:mb-0 sm:w-3/5 xs:grid-cols-3 gap-10'>
-                        <div className='font-mono text-sm md:space-y-10 space-y-5 pt-5 max-w-xs'>
+                        <div className='font-mono text-sm md:space-y-15 space-y-5 pt-5 max-w-xs'>
                             <p>CURRENTLY</p>
                             <div className='space-y-5'>
                                 <p>
@@ -83,9 +83,13 @@ export default function Home() {
                                     <p className='text-slate-500'>02</p>
                                     studying CS & design engineering @ Stanford (on a leave of absence)
                                 </p>
+                                <p>
+                                    <p className='text-slate-500'>03</p>
+                                    sometimes i write essays. other times i think about writing them and mourn that i don't have much time to write anymore.
+                                </p>
                             </div>
                         </div>
-                        <div className='font-mono text-sm md:space-y-10 space-y-5 pt-5 max-w-xs'>
+                        <div className='font-mono text-sm md:space-y-15 space-y-5 pt-5 max-w-xs'>
                             <p>SOME PAST WORK</p>
                             <div className='space-y-5'>
                                 <p>
@@ -98,15 +102,19 @@ export default function Home() {
                                 </p>
                                 <p>
                                     <p className='text-slate-500'>03</p>
-                                    published in the New York Times @ 16 + some other international awards for writing
+                                    published in the New York Times @ 16, youngest recipient of the Atlanta Review International Poetry Award, + some other awards for writing
                                 </p>
                                 <p>
                                     <p className='text-slate-500'>04</p>
                                     spoke at SXSW @ 17 about building a nuclear fusion reactor in the garage
                                 </p>
+                                <p>
+                                    <p className='text-slate-500'>05</p>
+                                    followed my parent's american dream of me going to a good college. made lifelong friends there. left after 10 weeks to chase a dream.
+                                </p>
                             </div>
                         </div>
-                        <div className='font-mono text-sm md:space-y-10 space-y-5 pt-5 max-w-xs'>
+                        <div className='font-mono text-sm md:space-y-15 space-y-5 pt-5 max-w-xs'>
                             <p>SELECTED WRITING</p>
                             <div className='space-y-5'>
                                 <p>
@@ -115,8 +123,8 @@ export default function Home() {
                                         <p className='inline'>Chaos Theory</p>
                                         <ArrowUpRightIcon className='inline wrap h-3.5 w-3.5' />
                                     </a>
-
-                                    <p className='italic text-xs pt-2 pb-2'>Or: On Modern Serendipity, Tech Twitter, and Luck as Agency</p>
+                                    <p className='text-sm pt-2 '>Or: On Modern Serendipity, Tech Twitter, and Luck as Agency</p>
+                                    <p className='italic text-sm pt-5 pb-2'>Kernel Magazine (2024)</p>
                                 </p>
                                 <p>
                                     <p className='text-slate-500'>02</p>
@@ -124,6 +132,11 @@ export default function Home() {
                                         <p className='inline'>Deconstructing machine learning for product design</p>
                                         <ArrowUpRightIcon className='inline wrap h-3.5 w-3.5' />
                                     </a>
+                                    <p className='italic text-sm pt-5 pb-2'>UX Collective (2022)</p>
+                                </p>
+                                <p>
+                                    <p className='text-slate-500'>03</p>
+                                    <p className='text-sm pb-2'>you can find other pieces of mine (particularly fiction & poetry) published across the internet. call it a scavenger hunt or whatever.</p>
                                 </p>
                             </div>
                         </div>
