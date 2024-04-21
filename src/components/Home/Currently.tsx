@@ -1,13 +1,15 @@
 import ScrambleText from '../ScrambleText';
 import { ArrowUpRightIcon } from '@heroicons/react/24/solid';
 import styles from '../../app/styles';
+import { motion } from 'framer-motion';
+import { animations } from '../../constants';
 
 const Currently = () => {
     return (
-        <div className='body md:space-y-15 space-y-5 pt-5 max-w-xs'>
-            <ScrambleText text='CURRENTLY' replayOn={false} />
-            <div className='space-y-5'>
-                <div>
+        <motion.nav animate={{ opacity: 1, x: 0 }} className='body md:space-y-15 space-y-5 pt-5 max-w-xs'>
+            <ScrambleText text='CURRENTLY' />
+            <motion.ul variants={animations.containerVariants} initial='hidden' animate='show' className='space-y-5'>
+                <motion.li variants={animations.itemVariants}>
                     <p className='text-slate-500'>01</p>
                     <div className='pb-5'>
                         <p className='inline'>co-founder @</p>{' '}
@@ -28,17 +30,17 @@ const Currently = () => {
                         </a>
                     </div>
                     <p>won Stanford&apos;s oldest & largest startup competition in consumer category</p>
-                </div>
-                <div>
+                </motion.li>
+                <motion.li variants={animations.itemVariants}>
                     <p className='text-slate-500'>02</p>
                     studying CS & design engineering @ Stanford (on a leave of absence)
-                </div>
-                <div>
+                </motion.li>
+                <motion.li variants={animations.itemVariants}>
                     <p className='text-slate-500'>03</p>
                     sometimes i write essays. other times i think about writing them and mourn that i don&apos;t have much time to write anymore.
-                </div>
-            </div>
-        </div>
+                </motion.li>
+            </motion.ul>
+        </motion.nav>
     );
 };
 
