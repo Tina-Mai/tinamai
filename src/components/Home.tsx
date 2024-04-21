@@ -66,7 +66,7 @@ export default function Home() {
                                         <p className='inline'>engineering the social fabric that once only existed in institutions</p>
                                     </p>
                                     <div className='pb-5 items-center flex-row gap-1'>
-                                        <p className='inline'>featured 2x in</p>{' '}
+                                        <p className='inline'>featured twice in</p>{' '}
                                         <a href='https://kndrd.com/press' target='_blank' rel='noopener noreferrer' className={`inline items-center flex-row gap-1 space-x-1 ${styles.hoverEffect}`}>
                                             <p className='inline'>Business Insider</p>
                                             <ArrowUpRightIcon className='inline wrap h-3.5 w-3.5' />
