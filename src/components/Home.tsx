@@ -12,10 +12,15 @@ export default function Home() {
                 <div className='z-10 w-full max-w-7xl items-start justify-between sm:flex'>
                     {/* about column */}
                     <div className='sm:w-1/5 max-w-xs space-y-10 pb-20'>
-                        <div className='flex justify-start gap-3 font-serif text-4xl'>
+                        <Image src='/name.svg' alt='tina mai' height={31} width={171} quality={85} />
+                        {/* <div className='flex justify-start gap-3 font-serif text-4xl'>
                             <p>Tina</p>
                             <p className='italic'>Mai</p>
-                        </div>
+                        </div> */}
+                        {/* <div className='flex justify-start gap-3 font-serif2 tracking-tighter italic text-5xl'>
+                            <p className='pr-0.5'>Tina</p>
+                            <p>Mai</p>
+                        </div> */}
 
                         <p className='font-mono text-sm'>eighteen. building things on the internet. currently a founder working on consumer in nyc.</p>
                         <p className='font-mono text-sm'>tinamai@stanford.edu</p>
