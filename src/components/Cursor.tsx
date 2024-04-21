@@ -43,8 +43,8 @@ const Cursor = () => {
             ref={cursorRef}
             src='/cursor.svg'
             alt='cursor'
-            width={30}
-            height={30}
+            width={32}
+            height={32}
             style={{
                 position: 'fixed',
                 left: '0px',
