@@ -17,6 +17,7 @@ export default function Home() {
 
                         <p className='font-mono text-sm'>eighteen. building things on the internet. currently founder working on consumer in nyc.</p>
                         <p className='font-mono text-sm'>tinamai@stanford.edu</p>
+                        <img src='/profile.jpg' alt='tina mai' className='h-40' />
 
                         <div className='space-y-5'>
                             <p className='font-mono text-sm'>ELSEWHERE</p>
@@ -87,8 +88,8 @@ export default function Home() {
                                 </p>
                                 <p>
                                     <p className='text-slate-500'>01</p>
-                                    <p className='flex pb-2 items-center flex-row text-wrap gap-1'>
-                                        Deconstructing machine learning for product design <ArrowUpRightIcon className='h-3.5 w-3.5' />
+                                    <p className='flex pb-2 items-center flex-row wrap gap-1'>
+                                        Deconstructing machine learning for product design <ArrowUpRightIcon className='flex wrap h-3.5 w-3.5' />
                                     </p>
                                 </p>
                             </div>
