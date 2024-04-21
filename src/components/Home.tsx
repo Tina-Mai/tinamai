@@ -1,5 +1,6 @@
 'use client';
 import Cursor from './Cursor';
+import styles from '../app/styles';
 import { ArrowUpRightIcon } from '@heroicons/react/24/solid';
 
 export default function Home() {
@@ -15,25 +16,30 @@ export default function Home() {
                             <p className='italic'>Mai</p>
                         </div>
 
-                        <p className='font-mono text-sm'>eighteen. building things on the internet. currently founder working on consumer in nyc.</p>
+                        <p className='font-mono text-sm'>eighteen. building things on the internet. currently a founder working on consumer in nyc.</p>
                         <p className='font-mono text-sm'>tinamai@stanford.edu</p>
                         <img src='/profile.jpg' alt='tina mai' className='h-40' />
 
                         <div className='space-y-5'>
                             <p className='font-mono text-sm'>ELSEWHERE</p>
                             <div className='sm:block sm:-space-y-5 flex flex-wrap'>
-                                <a href='https://twitter.com/t1namai' target='_blank' rel='noopener noreferrer' className='inline pr-2 space-x-1 transition-colors duration-400 hover:text-slate-300 hover:underline'>
+                                <a href='https://twitter.com/t1namai' target='_blank' rel='noopener noreferrer' className={`inline pr-2 space-x-1 ${styles.hoverEffect}`}>
                                     <p className='font-mono text-sm inline'>twitter</p>
                                     <ArrowUpRightIcon className='inline wrap h-3.5 w-3.5' />
                                 </a>
                                 <p className='pr-2 sm:pr-0 sm:invisible'>•</p>
-                                <a href='https://linkedin.com/in/tinammai' target='_blank' rel='noopener noreferrer' className='inline pr-2 space-x-1 transition-colors duration-400 hover:text-slate-300 hover:underline'>
+                                <a href='https://linkedin.com/in/tinammai' target='_blank' rel='noopener noreferrer' className={`inline pr-2 space-x-1 ${styles.hoverEffect}`}>
                                     <p className='font-mono text-sm inline'>linkedin</p>
                                     <ArrowUpRightIcon className='inline wrap h-3.5 w-3.5' />
                                 </a>
                                 <p className='pr-2 sm:pr-0 sm:invisible'>•</p>
-                                <a href='https://instagram.com/tinammai' target='_blank' rel='noopener noreferrer' className='inline space-x-1 transition-colors duration-400 hover:text-slate-300 hover:underline'>
+                                <a href='https://instagram.com/tinammai' target='_blank' rel='noopener noreferrer' className={`inline pr-2 space-x-1 ${styles.hoverEffect}`}>
                                     <p className='font-mono text-sm inline'>instagram</p>
+                                    <ArrowUpRightIcon className='inline wrap h-3.5 w-3.5' />
+                                </a>
+                                <p className='pr-2 sm:pr-0 sm:invisible'>•</p>
+                                <a href='https://drive.google.com/file/d/1ablmCsg_ozK8-yBVGRFA2BZRAR39ioop/view?usp=sharing' target='_blank' rel='noopener noreferrer' className={`inline pr-2 space-x-1 ${styles.hoverEffect}`}>
+                                    <p className='font-mono text-sm inline'>resume</p>
                                     <ArrowUpRightIcon className='inline wrap h-3.5 w-3.5' />
                                 </a>
                             </div>
@@ -48,9 +54,12 @@ export default function Home() {
                                 <p>
                                     <p className='text-slate-500'>01</p>
                                     <p className='pb-5'>co-founder @ Kndrd, engineering the social fabric that once only existed in institutions</p>
-                                    <div className='pb-5 items-center flex-row gap-1 space-x-1'>
-                                        <p className='inline'>featured 2x in Business Insider</p>
-                                        <ArrowUpRightIcon className='inline wrap h-3.5 w-3.5' />
+                                    <div className='pb-5 items-center flex-row gap-1'>
+                                        <p className='inline'>featured 2x in</p>{' '}
+                                        <a href='https://kndrd.com/press' target='_blank' rel='noopener noreferrer' className={`inline items-center flex-row gap-1 space-x-1 ${styles.hoverEffect}`}>
+                                            <p className='inline'>Business Insider</p>
+                                            <ArrowUpRightIcon className='inline wrap h-3.5 w-3.5' />
+                                        </a>
                                     </div>
                                     <p>won Stanford's oldest & largest startup competition in consumer category</p>
                                 </p>
@@ -86,12 +95,7 @@ export default function Home() {
                             <div className='space-y-5'>
                                 <p>
                                     <p className='text-slate-500'>01</p>
-                                    <a
-                                        href='https://www.kernelmag.io/4/chaos'
-                                        target='_blank'
-                                        rel='noopener noreferrer'
-                                        className='items-center flex-row space-x-1 transition-colors duration-400 hover:text-slate-300 hover:underline'
-                                    >
+                                    <a href='https://www.kernelmag.io/4/chaos' target='_blank' rel='noopener noreferrer' className={`items-center flex-row space-x-1 ${styles.hoverEffect}`}>
                                         <p className='inline'>Chaos Theory</p>
                                         <ArrowUpRightIcon className='inline wrap h-3.5 w-3.5' />
                                     </a>
@@ -99,13 +103,8 @@ export default function Home() {
                                     <p className='italic text-xs pt-2 pb-2'>Or: On Modern Serendipity, Tech Twitter, and Luck as Agency</p>
                                 </p>
                                 <p>
-                                    <p className='text-slate-500'>01</p>
-                                    <a
-                                        href='https://uxdesign.cc/machine-learning-for-product-designers-9d4002909964'
-                                        target='_blank'
-                                        rel='noopener noreferrer'
-                                        className='items-center flex-row space-x-1 transition-colors duration-400 hover:text-slate-300 hover:underline'
-                                    >
+                                    <p className='text-slate-500'>02</p>
+                                    <a href='https://uxdesign.cc/machine-learning-for-product-designers-9d4002909964' target='_blank' rel='noopener noreferrer' className={`items-center flex-row space-x-1 ${styles.hoverEffect}`}>
                                         <p className='inline'>Deconstructing machine learning for product design</p>
                                         <ArrowUpRightIcon className='inline wrap h-3.5 w-3.5' />
                                     </a>
