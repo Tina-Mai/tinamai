@@ -1,4 +1,5 @@
 'use client';
+import Image from 'next/image';
 import Cursor from './Cursor';
 import styles from '../app/styles';
 import { ArrowUpRightIcon } from '@heroicons/react/24/solid';
@@ -18,7 +19,7 @@ export default function Home() {
 
                         <p className='font-mono text-sm'>eighteen. building things on the internet. currently a founder working on consumer in nyc.</p>
                         <p className='font-mono text-sm'>tinamai@stanford.edu</p>
-                        <img src='/profile.jpg' alt='tina mai' className='h-40' />
+                        <Image src='/profile.jpg' alt='tina mai' className='h-40' />
 
                         <div className='space-y-5'>
                             <p className='font-mono text-sm'>ELSEWHERE</p>
