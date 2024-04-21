@@ -18,7 +18,7 @@ const config: Config = {
                 mono: ["JetBrains Mono", "monospace"],
             },
             fontSize: {
-                sm: "0.8rem",
+                sm: "0.75rem",
             },
         },
         screens: {

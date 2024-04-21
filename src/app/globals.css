@@ -33,3 +33,7 @@ body {
         text-wrap: balance;
     }
 }
+
+* {
+    cursor: none;
+}
