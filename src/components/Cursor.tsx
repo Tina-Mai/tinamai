@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import Image from 'next/image';
 
 const Cursor = () => {
     const cursorRef = useRef<HTMLImageElement>(null); // Use ref to directly manipulate the DOM element
@@ -46,9 +47,10 @@ const Cursor = () => {
     }, []);
 
     return (
-        <img
+        <Image
             ref={cursorRef}
             src='/cursor.svg'
+            alt='cursor'
             style={{
                 position: 'fixed', // Fixed position relative to the viewport
                 left: '0px',
