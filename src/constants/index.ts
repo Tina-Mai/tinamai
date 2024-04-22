@@ -1,4 +1,4 @@
 import { animations } from './animations';
-import { pastItems, socials } from './data';
+import { socials } from './data';
 
-export { animations, pastItems, socials };
+export { animations, socials };
