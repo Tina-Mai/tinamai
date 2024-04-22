@@ -23,7 +23,7 @@ const Item2 = () => (
         <p className='text-slate-500'>02</p>
         <div>
             <p className='inline'>built NLP-based voice accessible app for visually-impaired youth, awarded by</p>{' '}
-            <a href='https://youtu.be/AqG4mt9EUyc?si=l8qvlhRPBfF78K-Z&t=1593' target='_blank' rel='noopener noreferrer' className='inline items-center link'>
+            <a href='https://youtu.be/AqG4mt9EUyc?si=l8qvlhRPBfF78K-Z&t=1593' target='_blank' rel='noopener noreferrer' className='inline-flex items-center link'>
                 <ScrambleText text='U.S. Congress' className='inline mr-1' />
                 <ArrowUpRightIcon className='inline h-3.5 w-3.5' />
             </a>{' '}

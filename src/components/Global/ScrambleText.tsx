@@ -6,6 +6,7 @@ function ScrambleText({
     text,
     settings = {},
     className = '',
+
     replayOn = true,
 }: {
     text: string;
