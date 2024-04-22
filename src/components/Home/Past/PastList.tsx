@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { animations } from '../../../constants';
-import ScrambleText from '../../ScrambleText';
+import ScrambleText from '../../Global/ScrambleText';
 import { ArrowUpRightIcon } from '@heroicons/react/24/solid';
 
 const Item1 = () => (
@@ -35,7 +35,14 @@ const Item2 = () => (
 const Item3 = () => (
     <motion.li variants={animations.itemVariants}>
         <p className='text-slate-500'>03</p>
-        published in the New York Times @ 16, youngest recipient of the Atlanta Review International Poetry Award, + some other awards for writing
+        <div>
+            <p className='inline'>published in the</p>{' '}
+            <a href='https://x.com/AppleFilms/status/1494089759546744832' target='_blank' rel='noopener noreferrer' className='inline items-center link'>
+                <ScrambleText text='New York Times' className='inline mr-1' />
+                <ArrowUpRightIcon className='inline h-3.5 w-3.5' />
+            </a>{' '}
+            <p className='inline'>@ 16, youngest recipient of the Atlanta Review International Poetry Award, + some other awards for writing</p>
+        </div>
     </motion.li>
 );
 
@@ -58,7 +65,7 @@ const Item4 = () => (
 const Item5 = () => (
     <motion.li variants={animations.itemVariants}>
         <p className='text-slate-500'>05</p>
-        followed my parent's american dream to go to a good college. made lifelong friends there. left after 10 weeks to chase a riskier dream.
+        immigrated to the U.S. at 7. followed my parent&apos;s american dream to go to a good college. found my best friends there, then left after 10 weeks to pursue a riskier dream.
     </motion.li>
 );
 

@@ -1,4 +1,4 @@
-import ScrambleText from '../../ScrambleText';
+import ScrambleText from '../../Global/ScrambleText';
 import { motion } from 'framer-motion';
 import { animations } from '../../../constants';
 import WritingList from './WritingList';

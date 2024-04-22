@@ -1,7 +1,7 @@
 'use client';
-import Cursor from '../components/Cursor';
+import Cursor from '../components/Global/Cursor';
 import Intro from '../components/Home/Intro';
-import Currently from '../components/Home/Currently/Currently';
+import Current from '../components/Home/Current/Current';
 import Past from '../components/Home/Past/Past';
 import Writing from '../components/Home/Writing/Writing';
 import { motion } from 'framer-motion';
@@ -18,7 +18,7 @@ export default function Home() {
                     {/* divider line that only shows up on xs screens like mobile */}
                     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 2 }} className='sm:invisible sm:w-0 sm:mt-0 sm:mb-0 -mt-10 mb-10 w-full border-b border-slate-500' />
                     <div className='grid text-left sm:mb-0 sm:w-3/5 xs:grid-cols-3 gap-10'>
-                        <Currently />
+                        <Current />
                         <Past />
                         <Writing />
                     </div>

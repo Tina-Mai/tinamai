@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import ScrambleText from '../ScrambleText';
+import ScrambleText from '../Global/ScrambleText';
 import { socials, animations } from '../../constants';
 import { ArrowUpRightIcon } from '@heroicons/react/24/solid';
 import { motion } from 'framer-motion';
