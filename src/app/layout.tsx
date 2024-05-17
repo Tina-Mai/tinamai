@@ -17,6 +17,27 @@ export const metadata: Metadata = {
         siteName: title,
         type: 'website',
         locale: 'en_US',
+        images: [
+            {
+                url: 'src/app/opengraph-image/opengraph-image.png',
+                width: 790,
+                height: 987,
+                alt: 'Tina Mai',
+            },
+        ],
+    },
+    twitter: {
+        title: 'Tina Mai',
+        description:
+            'Tina Mai is an 18-year-old startup founder and developer building in the machine learning space. She was recognized for creating an AI accessibility app for youth, a fintech software that won the World Series of Innovation, and more. She studies computer science and product design at Stanford.',
+        images: [
+            {
+                url: 'src/app/opengraph-image/opengraph-image.png',
+                width: 790,
+                height: 987,
+                alt: 'Tina Mai',
+            },
+        ],
     },
     robots: {
         index: true,
