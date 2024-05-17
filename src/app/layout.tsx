@@ -5,7 +5,7 @@ import './globals.css';
 const inter = Inter({ subsets: ['latin'] });
 const title = 'Tina Mai';
 const description =
-    'Tina Mai is an 18-year-old startup founder and developer building in the machine learning space. She was recognized for creating an AI accessibility app for youth, a fintech software that won the World Series of Innovation, and more. She studies computer science and product design at Stanford.';
+    'Tina Mai is an 18-year-old startup founder and developer building in the machine learning space. She was recognized for creating an AI accessibility app for youth, a fintech software that won the World Series of Innovation, and more. She studies computer science and product engineering at Stanford.';
 
 export default function RootLayout({
     children,
