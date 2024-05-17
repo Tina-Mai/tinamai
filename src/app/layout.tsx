@@ -19,7 +19,7 @@ export const metadata: Metadata = {
         locale: 'en_US',
         images: [
             {
-                url: 'src/app/opengraph-image/opengraph-image.png',
+                url: '/profile.png',
                 width: 790,
                 height: 987,
                 alt: 'Tina Mai',
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
             'Tina Mai is an 18-year-old startup founder and developer building in the machine learning space. She was recognized for creating an AI accessibility app for youth, a fintech software that won the World Series of Innovation, and more. She studies computer science and product design at Stanford.',
         images: [
             {
-                url: 'src/app/opengraph-image/opengraph-image.png',
+                url: '/profile.png',
                 width: 790,
                 height: 987,
                 alt: 'Tina Mai',
@@ -78,7 +78,11 @@ export default function RootLayout({
 }>) {
     return (
         <html lang='en'>
-            <body className={inter.className}>{children}</body>
+            <meta property='og:image' content='/profile.png'>
+                <meta property='twitter:image' content='/profile.png'>
+                    <body className={inter.className}>{children}</body>
+                </meta>
+            </meta>
         </html>
     );
 }
