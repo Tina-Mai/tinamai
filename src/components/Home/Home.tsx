@@ -1,9 +1,9 @@
 'use client';
-import Cursor from '../components/Global/Cursor';
-import Intro from '../components/Home/Intro';
-import Current from '../components/Home/Current/Current';
-import Past from '../components/Home/Past/Past';
-import Writing from '../components/Home/Writing/Writing';
+import Cursor from '../Global/Cursor';
+import Intro from './Intro';
+import Current from './Current/Current';
+import Past from './Past/Past';
+import Writing from './Writing/Writing';
 import { motion } from 'framer-motion';
 
 export default function Home() {
