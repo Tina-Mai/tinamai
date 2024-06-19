@@ -33,11 +33,12 @@ export const metadata: Metadata = {
         images: [
             {
                 url: '/twitter-image.jpg',
-                width: 806,
-                height: 806,
+                width: 600,
+                height: 600,
                 alt: 'Tina Mai',
             },
         ],
+        // use 'summary' for small image (e.g. profile pic), 'summary_large_image' for large
         card: 'summary',
     },
     robots: {
