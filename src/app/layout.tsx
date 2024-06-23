@@ -20,8 +20,8 @@ export const metadata: Metadata = {
 		images: [
 			{
 				url: '/opengraph-image.jpg',
-				width: 790,
-				height: 987,
+				width: 1200,
+				height: 600,
 				alt: 'Tina Mai',
 			},
 		],
