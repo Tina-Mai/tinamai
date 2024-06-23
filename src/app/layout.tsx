@@ -39,7 +39,7 @@ export const metadata: Metadata = {
 			},
 		],
 		// use 'summary' for small image (e.g. profile pic), 'summary_large_image' for large
-		card: 'summary_large_image',
+		card: 'summary',
 	},
 	robots: {
 		index: true,
