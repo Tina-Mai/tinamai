@@ -2,4 +2,4 @@ this is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Tina Mai
 
-itty bitty personal website using React with Tailwind CSS. cool scramble text effect uses [this library](https://www.use-scramble.dev/). animations use _basic_ Framer Motion. that's it :)
+itty bitty personal website using React with Tailwind CSS. cool scramble text effect uses [this library](https://www.use-scramble.dev/). animations use basic Framer Motion. that's it :)
