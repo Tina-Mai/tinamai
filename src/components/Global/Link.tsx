@@ -4,7 +4,7 @@ import { ArrowUpRightIcon } from '@heroicons/react/24/solid';
 
 const Link = ({ text, href }: { text: string; href: string }) => {
 	return (
-		<a href={href} target='_blank' rel='noopener noreferrer' className='inline-block'>
+		<a href={href} target='_blank' rel='noopener noreferrer' className='inline'>
 			<ScrambleText text={text} className='inline link' />
 			<span className='whitespace-nowrap'>
 				&nbsp;

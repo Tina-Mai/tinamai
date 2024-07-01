@@ -21,10 +21,6 @@ const Item1 = () => (
 		</div>
 		<div className='pb-5 items-center flex-row gap-1'>
 			<p className='inline'>featured twice in</p> <Link text='Business Insider' href='https://kndrd.com/press' />
-			{/* <a href='https://kndrd.com/press' target='_blank' rel='noopener noreferrer' className='inline items-center flex-row gap-1 space-x-1 link'>
-				<ScrambleText text='Business Insider' className='inline' />
-				<ArrowUpRightIcon className='inline wrap h-3.5 w-3.5' />
-			</a> */}
 		</div>
 		<p>won Stanford&apos;s oldest & largest startup competition in consumer category</p>
 	</motion.li>
