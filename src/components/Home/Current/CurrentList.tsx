@@ -22,7 +22,7 @@ const Item1 = () => (
 		<div className='pb-5 items-center flex-row gap-1'>
 			<p className='inline'>featured twice in</p> <Link text='Business Insider' href='https://kndrd.com/press' />
 		</div>
-		<p>won Stanford&apos;s oldest & largest startup competition in consumer category</p>
+		<p>raised from Matt Higgins (early investor in Pinterest and Resy), Cal Henderson (founder of Slack), etc.</p>
 	</motion.li>
 );
 

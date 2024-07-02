@@ -8,12 +8,12 @@ export const socials = [
 		url: 'https://linkedin.com/in/tinammai/',
 	},
 	{
-		name: 'instagram',
-		url: 'https://instagram.com/tinammai/',
-	},
-	{
 		name: 'github',
 		url: 'https://github.com/tina-mai',
+	},
+	{
+		name: 'instagram',
+		url: 'https://instagram.com/tinammai/',
 	},
 	// {
 	//     name: 'resume',

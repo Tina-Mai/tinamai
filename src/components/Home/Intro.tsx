@@ -2,7 +2,6 @@ import React from 'react';
 import Image from 'next/image';
 import ScrambleText from '../Global/ScrambleText';
 import { socials, animations } from '../../constants';
-import { ArrowUpRightIcon } from '@heroicons/react/24/solid';
 import { motion } from 'framer-motion';
 import Link from '../Global/Link';
 
@@ -10,7 +9,7 @@ const Intro = () => {
 	return (
 		<div className='space-y-10'>
 			<Image src='/name.svg' alt='tina mai' height={31} width={171} quality={85} />
-			<ScrambleText text='eighteen. building things on the internet. currently founding consumer startup in nyc.' settings={{ speed: 0.5 }} />
+			<ScrambleText text='nineteen. building things on the internet. currently engineering interfaces, from consumer startups to deploying AGI.' settings={{ speed: 0.5 }} />
 
 			<motion.div animate={{ opacity: 1, x: 0 }}>
 				<motion.ul variants={animations.containerVariants} initial='hidden' animate='show' className='space-y-10'>
