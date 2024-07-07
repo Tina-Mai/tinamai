@@ -7,18 +7,18 @@ import { animations } from "@/constants";
 
 export default function Lists() {
 	return (
-		<div className="flex min-h-screen flex-col items-start justify-start xs:p-8 p-20 font-mono text-sm">
+		<div className="flex min-h-screen flex-col items-start justify-start p-20 sm:p-8 font-mono text-sm">
 			<motion.a href="/" className="body pb-7" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}>
 				<ScrambleText text="[ ← back to home ]" />
 			</motion.a>
 			<motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0 }} className="pb-10">
 				<ScrambleText text="FAVORITES I'VE COLLECTED THROUGH 19 YEARS OF LIVING" settings={{ speed: 1, tick: 5 }} />
 			</motion.div>
-			<motion.div className="grid grid-cols-[65px_1fr] gap-x-10 gap-y-10" variants={animations.containerVariants} initial="hidden" animate="show">
+			<motion.div className="grid sm:grid-cols-[65px_1fr] gap-x-10 sm:gap-y-10 gap-y-5" variants={animations.containerVariants} initial="hidden" animate="show">
 				{lists.map((section, index) => (
 					<motion.div key={index} className="contents" variants={animations.itemVariants}>
 						<p className="text-slate-500 italic">{section.title}</p>
-						<div className="flex flex-col">
+						<div className="flex flex-col pb-5 sm:pb-0">
 							{section.items.map((item, itemIndex) => (
 								<motion.div key={itemIndex} variants={animations.itemVariants}>
 									{item.link ? <Link text={item.text} href={item.link} /> : item.text}
