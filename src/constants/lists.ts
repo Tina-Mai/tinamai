@@ -50,7 +50,7 @@ export const lists: ListSection[] = [
 			{ text: "Charlie Bird, West Village" },
 			{ text: "Mercer Labs, Fidi" },
 			{ text: "Uluh, East Village" },
-			{ text: "The Met, Upper East Side" },
+			{ text: "Antidote, Williamsburg" },
 			{ text: "La Cabra, SoHo" },
 		],
 	},
