@@ -54,6 +54,6 @@ const Item5 = () => (
 	</motion.li>
 );
 
-const CurrentList = [Item1, Item2, Item3, Item4];
+const CurrentList = [Item1, Item2, Item3, Item4, Item5];
 
 export default CurrentList;
