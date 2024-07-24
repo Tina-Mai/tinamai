@@ -19,9 +19,9 @@ export const metadata: Metadata = {
 		locale: 'en_US',
 		images: [
 			{
-				url: '/opengraph-image.jpg',
+				url: '/opengraph-image.png',
 				width: 1200,
-				height: 600,
+				height: 630,
 				alt: 'Tina Mai',
 			},
 		],
@@ -32,14 +32,14 @@ export const metadata: Metadata = {
 		description: description,
 		images: [
 			{
-				url: '/twitter-image.jpg',
+				url: '/twitter-image.png',
 				width: 1200,
-				height: 600,
+				height: 630,
 				alt: 'Tina Mai',
 			},
 		],
 		// use 'summary' for small image (e.g. profile pic), 'summary_large_image' for large
-		card: 'summary',
+		card: 'summary_large_image',
 	},
 	robots: {
 		index: true,
