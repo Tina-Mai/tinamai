@@ -1,19 +1,19 @@
 export const socials = [
 	{
-		name: 'twitter',
-		url: 'https://twitter.com/tinabmai',
+		name: "twitter",
+		url: "https://twitter.com/tinabmai",
 	},
 	{
-		name: 'linkedin',
-		url: 'https://linkedin.com/in/tinabmai/',
+		name: "linkedin",
+		url: "https://linkedin.com/in/tinabmai/",
 	},
 	{
-		name: 'github',
-		url: 'https://github.com/tina-mai',
+		name: "github",
+		url: "https://github.com/tina-mai",
 	},
 	{
-		name: 'instagram',
-		url: 'https://instagram.com/tinabmai/',
+		name: "instagram",
+		url: "https://instagram.com/tinammai/",
 	},
 	// {
 	//     name: 'resume',
