@@ -29,7 +29,7 @@ const Item1 = () => (
 const Item2 = () => (
 	<motion.li variants={animations.itemVariants}>
 		<p className='text-slate-500'>02</p>
-		studying CS & design engineering @ Stanford (on a leave of absence)
+		studying CS & design engineering @ <Link text='Stanford' href='https://tina.sites.stanford.edu' /> (on a leave of absence)
 	</motion.li>
 );
 
