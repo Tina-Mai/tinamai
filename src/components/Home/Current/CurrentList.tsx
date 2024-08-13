@@ -43,7 +43,7 @@ const Item3 = () => (
 				</a>
 				<p className="inline">,</p>
 			</div>{" "}
-			<p className="inline">backed by Matt Higgins (Shark Tank), Cal Henderson (founder of Slack), etc.</p>
+			<p className="inline">backed by Cal Henderson (Slack), Matt Higgins (Shark Tank), etc.</p>
 		</div>
 	</motion.li>
 );
