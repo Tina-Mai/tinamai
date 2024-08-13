@@ -8,7 +8,7 @@ import Link from "../../Global/Link";
 const Item1 = () => (
 	<motion.li variants={animations.itemVariants}>
 		<p className="text-slate-500">01</p>
-		studying CS & neuroscience @ <Link text="Stanford" href="https://tina.sites.stanford.edu" />
+		studying CS & theoretical neuroscience @ <Link text="Stanford" href="https://tina.sites.stanford.edu" />
 	</motion.li>
 );
 
@@ -23,7 +23,7 @@ const Item3 = () => (
 	<motion.li variants={animations.itemVariants}>
 		<p className="text-slate-500">03</p>
 		<div className="pb-5">
-			<p className="inline">co-founder @</p>{" "}
+			<p className="inline">co-founder/CTO @</p>{" "}
 			<div className="inline-flex items-center whitespace-nowrap">
 				<a href="https://kndrd.com" target="_blank" rel="noopener noreferrer" className="flex items-center link">
 					<ScrambleText text="Kndrd" className="mr-1" />
@@ -31,12 +31,20 @@ const Item3 = () => (
 				</a>
 				<p className="inline">,</p>
 			</div>{" "}
-			<p className="inline">engineering the social fabric that once only existed in institutions</p>
+			<p className="inline">engineering on-demand social</p>
 		</div>
-		<div className="pb-5 items-center flex-row gap-1">
-			<p className="inline">featured twice in</p> <Link text="Business Insider" href="https://kndrd.com/press" />
+
+		<div>
+			<p className="inline">featured twice in</p>{" "}
+			<div className="inline-flex items-center whitespace-nowrap">
+				<a href="https://kndrd.com/press" target="_blank" rel="noopener noreferrer" className="flex items-center link">
+					<ScrambleText text="Business Insider" className="mr-1" />
+					<ArrowUpRightIcon className="h-3.5 w-3.5" />
+				</a>
+				<p className="inline">,</p>
+			</div>{" "}
+			<p className="inline">backed by Matt Higgins (Shark Tank), Cal Henderson (founder of Slack), etc.</p>
 		</div>
-		<p>raised from Matt Higgins (early investor in Pinterest and Resy), Cal Henderson (founder of Slack), etc.</p>
 	</motion.li>
 );
 
