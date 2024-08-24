@@ -5,6 +5,7 @@ import ScrambleText from "../../../components/Global/ScrambleText";
 import Link from "../../../components/Global/Link";
 import coverImg from "../../../assets/chaos-theory/cover.png";
 import img1 from "../../../assets/chaos-theory/1.png";
+import img2 from "../../../assets/chaos-theory/2.png";
 
 export default function ChaosTheory() {
 	return (
@@ -31,21 +32,6 @@ export default function ChaosTheory() {
 						<Image src={coverImg} alt="cover" className="max-w-72 sm:max-w-none w-full sm:h-full object-cover" />
 					</div>
 				</div>
-				{/* <div className="vertical sm:horizontal w-full sm:h-[100dvh] px-10 gap-20 py-10 sm:px-0 sm:gap-0 sm:py-0 center-v center-h bg-dark text-white text-center">
-					<div className="vertical h-full justify-between items-center sm:w-1/3 sm:mx-auto sm:py-7">
-						<a href="/" className="body">
-							<ScrambleText text="[ ← back to home ]" />
-						</a>
-						<div className="font-serif vertical gap-5">
-							<h1 className="text-6xl font-monoDisplay font-medium uppercase">Chaos Theory</h1>
-							<h2 className="text-3xl italic tracking-tight">Or: On Modern Serendipity, Tech Twitter, and Luck as Agency</h2>
-						</div>
-						<div className="body">
-							Written for <Link text="Kernel Magazine" href="https://www.kernelmag.io/4/chaos" />, March 2024
-						</div>
-					</div>
-					<Image src={coverImg} alt="cover" className="h-96 sm:h-full w-auto" />
-				</div> */}
 
 				<div className="flex center-v w-full py-16 font-serif text-lg">
 					<div className="w-full max-w-prose px-4 md:px-0 space-y-5">
@@ -158,8 +144,105 @@ export default function ChaosTheory() {
 						</p>
 						<p className="text-center">* * *</p>
 						<p>The message came on October 4, 2022. A popup in the “Messaging” tab on my LinkedIn showed an unread DM:</p>
+						<div>
+							<p>
+								<b>To:</b> Tina Mai
+							</p>
+							<p>
+								<b>From:</b> Isabella Epstein
+							</p>
+							<p>
+								<b>Date:</b> Oct 4, 2022 at 9:22 PM
+							</p>
+							<p>
+								<b>Subject:</b> Loomis Chaffee Alum &gt; Startup
+							</p>
+						</div>
+						<p>
+							I was just starting my senior year of high school—AP Physics had a test on Monday, my friends were blasting the group chat with potential homecoming dresses, and I spent my
+							nights concocting my Common App college application essay. The message that reached me was completely unexpected; in it, my now-cofounder Isabella, who graduated seven
+							years earlier from the high school I went to, mentioned how she stumbled across my profile in the student directory and was hooked by the projects I had built. What was
+							supposed to be a 30-minute call turned into a 3-hour-long ideating session for a new startup idea. A year later, this became the company that I left college to build—but it
+							all began as what one might consider a lucky cold outreach.
+						</p>
+						<Image src={img1} alt="img1" className="w-full" />
+						<p>
+							Back in 2007, Marc Andreessen—the billionaire tech venture capitalist famous for his bets on Facebook, Twitter, and other Silicon Valley legends (as well as what{" "}
+							<i>The New Yorker</i> describes to be “a cranium so large, bald, and oblong that you can’t help but think of words like ‘jumbo’ and ‘Grade A’”)—wrote a blog post where he
+							discusses the four types of luck. Originally introduced in Dr. James Austin’s 1978 book <i>Chase, Chance, and Creativity</i>, these are called Chance I, Chance II, Chance
+							III, and Chance IV. Chance I is blind luck, or the force that’s entirely out of our control. In Chance II, luck is attracted based on hard work and persistence. In Chance
+							III, luck comes to those who are really good at spotting it. Chance IV, however, is the kind of luck that can be engineered from individual action. Dr. Austin writes:
+							“Chance IV comes to you, unsought, because of who you are and how you behave.” Every entrepreneur knows that luck plays a huge role in success vs. failure: but Andreessen
+							concludes that if there’s a roadmap to getting lucky, this is it.
+						</p>
+						<p>
+							There is an argument that the rise of the internet has undercut serendipity. As Gen Z, we spend our days aided by consumer software to make us more efficient (Spotify for
+							online music, Zoom for online meetings, Instacart for online groceries), and as a result find ourselves less and less in environments where we might unexpectedly stumble
+							across something new to love. After all, looking up an exact title on Amazon.com is not the same as browsing a bookstore and walking past a novel that catches your eye. In
+							an archived piece for <i>The New York Times</i> from 2006, William McKeen observes how “We have become such a <i>directed</i> people. We can target what we want, thanks to
+							the Internet. Put a couple of key words into a search engine and you find—with an irritating hit or miss here and there—exactly what you're looking for.”
+						</p>
+						<p>
+							But this is only one way to use the internet. It’s true that what it looks like to get lucky now differs vastly from what it did twenty years ago, but that doesn’t mean
+							serendipity was more existent “back in the day” when the kids browsed bookstores and bought groceries from the local supermarket. Instead, particularly for young founders,
+							the emergence of the social internet has enabled an entirely new way of finding luck, especially Chance IV luck. On Twitter, a 15-year-old from the suburbs of Indiana
+							raised $20 million after posting about taking meetings in the stalls of his high school bathroom. A 19-year-old programmer without a college degree grew an AI startup
+							backed by Sam Altman after sharing exceptional product demos. A 27-year-old dropout who got fired by his hedge fund amassed 62,000 members (and $19.2 million) to build a
+							futuristic city in the Mediterranean after posting his utopian vision that included “muscular warriors, very thin priests, and portly merchants.” (Then, a personal tweet
+							that I posted about leaving school to build in New York City got me invited to his city’s office in SoHo.) Tech Twitter has enabled the next generation of founders to be
+							“luckier”: what was previously a game of warm intros and predetermined privilege has become more of a free-for-all for who can send the best cold DMs or write the most
+							provocative tweets.
+						</p>
+						<p>
+							There’s a phenomenon within the circle of young builders that exemplifies this idea of manufactured luck: called “building in public,” it encapsulates programmers, writers,
+							and other creators posting progress on their work as they are making it (mistakes and obstacles included). 16-year-olds on LinkedIn post screenshots of their code with
+							captions like “Day 3 of building a galaxy collision simulation, can’t seem to figure out the error in line 57” or “6 weeks into building my hand-gesture-controlled robot.
+							This is probably the most frustrating project I’ve ever worked on.” A startup called Buildspace (self-described on Twitter as “the place where people build cool shit”)
+							invites people to take an idea they’re excited about and bring it to life, led by a practice of sharing your progress and getting feedback. Prominent funds like Andreessen
+							Horowitz and Y Combinator back them for their prolific culture where tens of thousands of people build in public, whether it’s a web game about fighting ninjas or spices
+							that make any food taste like meat.
+						</p>
+						<p>Getting found is about being findable.</p>
+						<p>
+							When that message found me on October 4, it wasn’t because I could control where my life went, just as how Bill Gates and Jonathan Larson couldn’t control theirs. I can
+							only connect the dots looking back: the unintentional placement in AP Computer Science led to me building my own apps, led to me publishing my projects, led to my work
+							getting noticed by Isabella, led to her becoming my cofounder, led to this company. Our generation hasn’t diminished serendipity; it has simply found (and multiplied) it in
+							other ways. Cold emails, captivating tweets, and viral TikToks have one thing in common: they originated from action. This is what parallels them to Chance IV luck. Young
+							people today have gotten good at increasing the surface area through which luck can enter their lives—in the age of the internet, it is an act of self-invention and hopeful
+							intervention. It is a chance to reclaim agency.
+						</p>
+						<p className="text-center">* * *</p>
+						<p>
+							Chaos theory is a branch of mathematics and physics that studies the unpredictable. It looks at systems that are non-linear and highly sensitive to initial conditions,
+							where one small change to an input leads to unimaginable changes in result: the science of surprises. There are phenomena in our existence—the weather, the stock market,
+							the story of our lives—that can never be predicted, because one tiny change makes all the difference.
+						</p>
+						<p>
+							In another universe, I am lying on the floor in a small apartment. I am five years old, and nothing has happened to me. I am a blank slate of initial conditions on which
+							the rest of my life will be built. How many branches, how many alternate universes, will spawn if one thing happened differently? How many things can go wrong? We can try
+							to guess, or we can embrace the chaos. In his <i>Principal Doctrines</i>, the Greek philosopher Epicurus writes: “Bad luck strikes the sophisticated man in a few cases, but
+							reason has directed the big, essential things, and for the duration of life it is and will be the guide.”
+						</p>
+						<p>
+							In the aftermath of luck, we have agency. Chaos teaches us to expect the unexpected, but what happens after that is up to us. Proactive people don’t wait for life to happen
+							to them; they make their own luck. Serendipity finds its way into your life when you are always learning, always building, always sharing your work. On my deathbed, I will
+							spend time connecting all the dots in my life, but they will be dots I never could have predicted. The beauty of luck is its lawlessness; we can live in fear of this
+							lawlessness, or we can minimize the impact of its external, uncontrollable factors and maximize how well we respond to them.
+						</p>
+						<p>
+							In this current universe, I am eighteen years old, standing on the rooftop of Stanford’s Aeronautics and Astronautics building on one of my last nights of being a student
+							there. It’s late enough that the remaining restless students have either retreated to their dorms or committed to their all-nighters in Huang basement. I’m about to leave
+							and move across the country. Like Jonathan Larson, this is my fabled move to New York City, where our one-bedroom apartment in the West Village has a kitchen which is ten
+							feet from the bed which is two feet from the desk. I have feared luck my whole life—now, I don’t see it as a threat, but more so the gentle machinery of life. Chaos theory
+							teaches me that life is nonlinear and unpredictable. There is no point in trying to guess different endings.
+						</p>
+						<p>So here’s to this one.</p>
 					</div>
 				</div>
+
+				<a className="horizontal center-v pb-20 cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
+					<ScrambleText text="[↑ back to top]" />
+				</a>
 			</div>
 		</>
 	);
