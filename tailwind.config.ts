@@ -5,12 +5,13 @@ const config: Config = {
 	theme: {
 		extend: {
 			colors: {
-				dark: "#1E1E1E",
-				light: "#E4E4E7",
+				// dark: "#1E1E1E",
+				dark: "#17131D",
+				light: "#FEFFF8",
 			},
 			fontFamily: {
-				serif: ["Playfair Display", "serif"],
-				serif2: ["EB Garamond", "serif"],
+				serif: ["EB Garamond", "serif"],
+				serif2: ["Playfair Display", "serif"],
 				// serif: ["Guyot-Text", "serif"],
 				mono: ["JetBrains Mono", "monospace"],
 				monoDisplay: ["Xanh Mono", "monospace"],
