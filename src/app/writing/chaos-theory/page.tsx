@@ -165,7 +165,7 @@ export default function ChaosTheory() {
 							supposed to be a 30-minute call turned into a 3-hour-long ideating session for a new startup idea. A year later, this became the company that I left college to build—but it
 							all began as what one might consider a lucky cold outreach.
 						</p>
-						<Image src={img1} alt="img1" className="w-full" />
+						<Image src={img2} alt="img2" className="w-full" />
 						<p>
 							Back in 2007, Marc Andreessen—the billionaire tech venture capitalist famous for his bets on Facebook, Twitter, and other Silicon Valley legends (as well as what{" "}
 							<i>The New Yorker</i> describes to be “a cranium so large, bald, and oblong that you can’t help but think of words like ‘jumbo’ and ‘Grade A’”)—wrote a blog post where he
