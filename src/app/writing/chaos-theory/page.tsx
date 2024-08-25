@@ -238,7 +238,7 @@ export default function ChaosTheory() {
 						that life is nonlinear and unpredictable. There is no point in trying to guess different endings.
 					</p>
 					<p>So here’s to this one.</p>
-					<p className="text-zinc-500 text-center italic">
+					<p className="text-zinc-500 text-center italic pt-5">
 						This essay was originally written for and published in{" "}
 						<a href="https://www.kernelmag.io/issues/4" target="_blank" className="decoration-zinc-500 hover:decoration-solid hover:decoration-1 transition-all link">
 							Kernel Magazine, Issue 4
