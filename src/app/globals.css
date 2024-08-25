@@ -14,10 +14,6 @@ body {
 	background: #17131d;
 }
 
-* {
-	cursor: none;
-}
-
 @layer base {
 	.body {
 		@apply font-mono text-sm;
