@@ -43,6 +43,13 @@ const Item3 = () => (
 const Item4 = () => (
 	<motion.li variants={animations.itemVariants}>
 		<p className="text-slate-500">04</p>
+		venture partner @ <Link text="Contrary" href="https://contrary.com" />
+	</motion.li>
+);
+
+const Item5 = () => (
+	<motion.li variants={animations.itemVariants}>
+		<p className="text-slate-500">05</p>
 		sometimes i write essays. other times i think about writing them and mourn that i don&apos;t have much time to write anymore.
 	</motion.li>
 );
