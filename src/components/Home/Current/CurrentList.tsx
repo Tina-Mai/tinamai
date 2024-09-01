@@ -8,7 +8,7 @@ import Link from "../../Global/Link";
 const Item1 = () => (
 	<motion.li variants={animations.itemVariants}>
 		<p className="text-slate-500">01</p>
-		studying CS & neuroscience @ <Link text="Stanford" href="https://tina.sites.stanford.edu" /> (on a leave of absence)
+		studying CS & neuroscience @ <Link text="Stanford" href="https://tina.sites.stanford.edu" />
 	</motion.li>
 );
 
