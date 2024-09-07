@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { animations } from "../../../constants";
+import { animations } from "@/constants";
 import Link from "../../Global/Link";
 
 const Item1 = () => (

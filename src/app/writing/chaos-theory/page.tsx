@@ -1,11 +1,12 @@
 "use client";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import ScrambleText from "../../../components/Global/ScrambleText";
-import Link from "../../../components/Global/Link";
-import coverImg from "../../../assets/chaos-theory/cover.png";
-import img1 from "../../../assets/chaos-theory/1.png";
-import img2 from "../../../assets/chaos-theory/2.png";
+import ScrambleText from "@/components/Global/ScrambleText";
+import Link from "@/components/Global/Link";
+import coverImg from "@/assets/chaos-theory/cover.png";
+import img1 from "@/assets/chaos-theory/1.png";
+import img2 from "@/assets/chaos-theory/2.png";
+import printImg from "@/assets/chaos-theory/print.jpeg";
 
 export default function ChaosTheory() {
 	return (
@@ -238,6 +239,8 @@ export default function ChaosTheory() {
 						that life is nonlinear and unpredictable. There is no point in trying to guess different endings.
 					</p>
 					<p>So here’s to this one.</p>
+
+					{/* kernel mag acknowledgement */}
 					<p className="text-zinc-500 text-center italic pt-5">
 						This essay was originally written for and published in{" "}
 						<a href="https://www.kernelmag.io/issues/4" target="_blank" className="decoration-zinc-500 hover:decoration-solid hover:decoration-1 transition-all link">
@@ -245,6 +248,9 @@ export default function ChaosTheory() {
 						</a>
 						. Thank you to Jasmine Sun for editing and to Phuc-Thanh Mai Vo for illustrating :)
 					</p>
+					<div className="horizontal center-v">
+						<Image src={printImg} alt="Print copy of Kernal Magazine" width={300} height={300} />
+					</div>
 				</div>
 			</div>
 

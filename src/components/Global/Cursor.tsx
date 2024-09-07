@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import Image from "next/image";
-import cursor from "../../assets/cursor.svg";
+import cursor from "@/assets/cursor.svg";
 
 const Cursor = () => {
 	const cursorRef = useRef<HTMLImageElement>(null); // use ref to directly manipulate the DOM element

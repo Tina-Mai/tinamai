@@ -1,6 +1,6 @@
 "use client";
-import Home from "../components/Home/Home";
-import Cursor from "../components/Global/Cursor";
+import Home from "@/components/Home/Home";
+import Cursor from "@/components/Global/Cursor";
 
 export default function Index() {
 	return (

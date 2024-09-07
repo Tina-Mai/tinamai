@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { animations } from "../../../constants";
+import { animations } from "@/constants";
 import ScrambleText from "../../Global/ScrambleText";
 import { ArrowUpRightIcon } from "@heroicons/react/24/solid";
 import Link from "../../Global/Link";
