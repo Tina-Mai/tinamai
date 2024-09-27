@@ -17,7 +17,12 @@ const Item2 = () => (
 	</motion.li>
 );
 
-const Item3 = () => <motion.li variants={animations.itemVariants}></motion.li>;
+const Item3 = () => (
+	<motion.li variants={animations.itemVariants}>
+		<p className="text-slate-500">03</p>
+		helping friends design interfaces for mechanistic interpretability @ <Link text="Tilde" href="https://tilderesearch.com" />
+	</motion.li>
+);
 
 const Item4 = () => (
 	<motion.li variants={animations.itemVariants}>
