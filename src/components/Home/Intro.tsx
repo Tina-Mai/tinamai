@@ -21,8 +21,20 @@ const Intro = () => {
 						<Image src="/profile.jpg" alt="tina mai" height={180} width={135} quality={85} />
 					</motion.li>
 
+					{/* nav */}
+					<div className="space-y-3">
+						<motion.li variants={animations.itemVariants} className="body">
+							<ScrambleText text="ON HERE" />
+						</motion.li>
+						<div className="sm:block sm:-space-y-5 flex flex-wrap">
+							<motion.li variants={animations.itemVariants} key={null}>
+								<Link text="lists" href="/lists" className="pr-2 space-x-1" />
+							</motion.li>
+						</div>
+					</div>
+
 					{/* social links */}
-					<div className="space-y-5">
+					<div className="space-y-3">
 						<motion.li variants={animations.itemVariants} className="body">
 							<ScrambleText text="ELSEWHERE" />
 						</motion.li>
