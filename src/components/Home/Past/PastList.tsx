@@ -1,9 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { animations } from "@/constants";
-import Link from "../../Global/Link";
-import ScrambleText from "@/components/Global/ScrambleText";
-import { ArrowUpRightIcon } from "@heroicons/react/24/solid";
+import Link from "@/components/Global/Link";
 
 const Item1 = () => (
 	<motion.li variants={animations.itemVariants}>

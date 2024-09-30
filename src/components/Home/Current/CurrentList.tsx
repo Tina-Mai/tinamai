@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { animations } from "@/constants";
-import Link from "../../Global/Link";
+import Link from "@/components/Global/Link";
 
 const Item1 = () => (
 	<motion.li variants={animations.itemVariants}>
