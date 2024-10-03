@@ -15,7 +15,7 @@ const Item1 = () => (
 const Item2 = () => (
 	<motion.li variants={animations.itemVariants}>
 		<p className="text-slate-500">02</p>
-		building & researching human simulating agents and new interfaces to deploy them
+		researching human simulating agents (new architectures inspired by theoretical neuro) & building new interfaces to deploy them
 	</motion.li>
 );
 
