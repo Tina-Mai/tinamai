@@ -14,6 +14,13 @@ const Item1 = () => (
 
 const Item2 = () => (
 	<motion.li variants={animations.itemVariants}>
+		<p className="text-slate-500">03</p>
+		building human simulating agents and new interfaces to deploy them @ <Link text="Open Machine" href="https://openmachine.vercel.app" /> lab
+	</motion.li>
+);
+
+const Item3 = () => (
+	<motion.li variants={animations.itemVariants}>
 		<p className="text-slate-500">02</p>
 		<div className="pb-5">
 			<p className="inline">co-founder @</p>{" "}
@@ -30,13 +37,6 @@ const Item2 = () => (
 			<p className="inline">featured twice in</p> <Link text="Business Insider" href="https://kndrd.com/press" />
 		</div>
 		<p>raised from Matt Higgins (early investor in Pinterest and Resy), Cal Henderson (founder of Slack), etc.</p>
-	</motion.li>
-);
-
-const Item3 = () => (
-	<motion.li variants={animations.itemVariants}>
-		<p className="text-slate-500">03</p>
-		building new interfaces enabled by mechanistic interpretability @ <Link text="Tilde Research" href="https://tilderesearch.com" />
 	</motion.li>
 );
 
