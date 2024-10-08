@@ -5,7 +5,7 @@ export const socials = [
 	},
 	{
 		name: 'linkedin',
-		url: 'https://linkedin.com/in/tinammai/',
+		url: 'https://linkedin.com/in/tinabmai/',
 	},
 	{
 		name: 'github',
