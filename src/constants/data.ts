@@ -1,7 +1,7 @@
 export const socials = [
 	{
 		name: 'twitter',
-		url: 'https://twitter.com/t1namai',
+		url: 'https://twitter.com/tinabmai',
 	},
 	{
 		name: 'linkedin',
