@@ -13,7 +13,7 @@ export const socials = [
 	},
 	{
 		name: 'instagram',
-		url: 'https://instagram.com/tinabmai/',
+		url: 'https://instagram.com/tinammai/',
 	},
 	// {
 	//     name: 'resume',
