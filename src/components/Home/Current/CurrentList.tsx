@@ -14,14 +14,14 @@ const Item1 = () => (
 
 const Item2 = () => (
 	<motion.li variants={animations.itemVariants}>
-		<p className="text-slate-500">03</p>
-		building human simulating agents and new interfaces to deploy them @ <Link text="Open Machine" href="https://openmachine.vercel.app" /> lab
+		<p className="text-slate-500">02</p>
+		building & researchinghuman simulating agents and new interfaces to deploy them
 	</motion.li>
 );
 
 const Item3 = () => (
 	<motion.li variants={animations.itemVariants}>
-		<p className="text-slate-500">02</p>
+		<p className="text-slate-500">03</p>
 		<div className="pb-5">
 			<p className="inline">co-founder @</p>{" "}
 			<div className="inline-flex items-center whitespace-nowrap">
