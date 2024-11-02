@@ -2,8 +2,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import { animations } from "@/constants";
 import Link from "../../Global/Link";
-import ScrambleText from "@/components/Global/ScrambleText";
-import { ArrowUpRightIcon } from "@heroicons/react/24/solid";
 
 const Item1 = () => (
 	<motion.li variants={animations.itemVariants}>
@@ -19,34 +17,7 @@ const Item2 = () => (
 	</motion.li>
 );
 
-const Item3 = () => (
-	<motion.li variants={animations.itemVariants}>
-		<p className="text-slate-500">03</p>
-		<div className="pb-5">
-			<p className="inline">co-founder/CTO @</p>{" "}
-			<div className="inline-flex items-center whitespace-nowrap">
-				<a href="https://kndrd.com" target="_blank" rel="noopener noreferrer" className="flex items-center link">
-					<ScrambleText text="Kndrd" className="mr-1" />
-					<ArrowUpRightIcon className="h-3.5 w-3.5" />
-				</a>
-				<p className="inline">,</p>
-			</div>{" "}
-			<p className="inline">engineering on-demand social</p>
-		</div>
-
-		<div>
-			<p className="inline">featured twice in</p>{" "}
-			<div className="inline-flex items-center whitespace-nowrap">
-				<a href="https://kndrd.com/press" target="_blank" rel="noopener noreferrer" className="flex items-center link">
-					<ScrambleText text="Business Insider" className="mr-1" />
-					<ArrowUpRightIcon className="h-3.5 w-3.5" />
-				</a>
-				<p className="inline">,</p>
-			</div>{" "}
-			<p className="inline">backed by Cal Henderson (Slack), Matt Higgins (Shark Tank), etc.</p>
-		</div>
-	</motion.li>
-);
+const Item3 = () => <motion.li variants={animations.itemVariants}></motion.li>;
 
 const Item4 = () => (
 	<motion.li variants={animations.itemVariants}>
