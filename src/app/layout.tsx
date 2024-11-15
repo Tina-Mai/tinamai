@@ -5,12 +5,12 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 const title = "Tina Mai";
 const description =
-	"Tina Mai is an 18-year-old startup founder and developer building in the machine learning space. She was recognized for creating an AI accessibility app for youth, a fintech software that won the World Series of Innovation, and more. She studies computer science and product design at Stanford.";
+	"Tina Mai is an 19-year-old startup founder and developer building in the machine learning space. She was recognized for creating an AI accessibility app for youth, a fintech software that won the World Series of Innovation, and more. She studies computer science and neuroscience at Stanford.";
 
 export const metadata: Metadata = {
 	title: title,
 	description: description,
-	keywords: ["tina mai", "tina", "mai", "kndrd", "stanford", "startup", "founder", "design", "engineer", "builder", "machine learning", "ai", "computer science", "product design"],
+	keywords: ["tina mai", "tina", "mai", "stanford", "startup", "founder", "design", "engineer", "builder", "machine learning", "ai", "computer science", "product design"],
 	openGraph: {
 		title: title,
 		description: description,
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 				alt: "Tina Mai",
 			},
 		],
-		url: "https://tinamai.xyz",
+		url: "https://tinabmai.com",
 	},
 	twitter: {
 		title: title,
@@ -69,8 +69,8 @@ export const metadata: Metadata = {
 			},
 		],
 	},
-	metadataBase: new URL("https://tinamai.xyz"),
-	alternates: { canonical: "https://tinamai.xyz" },
+	metadataBase: new URL("https://tinabmai.com"),
+	alternates: { canonical: "https://tinabmai.com" },
 };
 
 export default function RootLayout({
