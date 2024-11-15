@@ -19,6 +19,7 @@ const Item2 = () => (
 
 const Item3 = () => (
 	<motion.li variants={animations.itemVariants}>
+		<p className="text-slate-500">03</p>
 		helping friends design interfaces for mechanistic interpretability @ <Link text="Tilde" href="https://tilderesearch.com" />
 	</motion.li>
 );
