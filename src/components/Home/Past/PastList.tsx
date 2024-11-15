@@ -10,14 +10,7 @@ const Item1 = () => (
 		<p className="text-slate-500">01</p>
 		<div className="pb-5">
 			<p className="inline">co-founder/CTO @</p> <Link text="Kndrd" href="https://kndrd.com" />. <p className="inline">featured in</p>{" "}
-			<div className="inline-flex items-center whitespace-nowrap">
-				<a href="https://kndrd.com/press" target="_blank" rel="noopener noreferrer" className="flex items-center link">
-					<ScrambleText text="Business Insider" className="mr-1" />
-					<ArrowUpRightIcon className="h-3.5 w-3.5" />
-				</a>
-				<p className="inline">,</p>
-			</div>{" "}
-			<p className="inline">backed by Cal Henderson (Slack), Matt Higgins (Shark Tank), etc.</p>
+			<Link text="Business Insider" href="https://kndrd.com/press" />, <p className="inline">backed by Cal Henderson (Slack), Matt Higgins (Shark Tank), etc.</p>
 		</div>
 
 		<div>started @ 17, stepped back after 2y to focus on more technical research & personal projects.</div>
