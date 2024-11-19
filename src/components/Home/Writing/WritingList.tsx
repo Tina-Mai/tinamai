@@ -16,7 +16,7 @@ const Item2 = () => (
 	<motion.li variants={animations.itemVariants}>
 		<p className="text-slate-500">02</p>
 		<p>Kids These Days</p>
-		<p className="pt-2 ">American exceptionalism, the phenomenon of gifted children, and the childhoods of exceptional people</p>
+		<p className="pt-2 ">Or: American Exceptionalism and the Phenomenon of Gifted Children</p>
 		<p className="italic pt-5 pb-2">Forthcoming (2025)</p>
 	</motion.li>
 );
