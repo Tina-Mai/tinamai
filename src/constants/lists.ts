@@ -58,8 +58,8 @@ export const lists: ListSection[] = [
 		title: "personal software",
 		items: [{ text: "Arc Browser" }, { text: "Cursor" }, { text: "Notion" }, { text: "Figma" }, { text: "Warp" }, { text: "Raycast" }],
 	},
-	{
-		title: "favorite of all time :)",
-		items: [{ text: "Mason Wang", link: "https://masonjwang.com" }],
-	},
+	// {
+	// 	title: "favorite of all time :)",
+	// 	items: [{ text: "Mason Wang", link: "https://masonjwang.com" }],
+	// },
 ];
