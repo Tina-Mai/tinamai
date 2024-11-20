@@ -7,17 +7,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
 			lastModified: new Date(),
 			changeFrequency: "weekly",
 			priority: 1,
-			images: [
-				{
-					loc: "https://tinabmai.com/profile.jpg",
-					title: "Tina Mai",
-					caption: "Tina Mai",
-				},
-				{
-					loc: "https://tinabmai.com/opengraph-image.png",
-					title: "Tina Mai",
-				},
-			],
+		},
+		{
+			url: "https://tinabmai.com/profile.jpg",
+			lastModified: new Date(),
+			changeFrequency: "monthly",
+			priority: 0.8,
+		},
+		{
+			url: "https://tinabmai.com/opengraph-image.png",
+			lastModified: new Date(),
+			changeFrequency: "monthly",
+			priority: 0.7,
 		},
 		// ... other pages
 	];
