@@ -30,7 +30,12 @@ export const lists: ListSection[] = [
 	},
 	{
 		title: "essays",
-		items: [{ text: '"This is Water" (David Foster Wallace)' }, { text: '"How to Do Great Work" (Paul Graham)' }, { text: '"Dostoevsky as Lover" (Henrik Karlsson)' }],
+		items: [
+			{ text: '"This is Water" (David Foster Wallace)' },
+			{ text: '"How to Do Great Work" (Paul Graham)' },
+			{ text: '"Dostoevsky as Lover" (Henrik Karlsson)' },
+			{ text: '"Always Be Optimizing" (Jia Tolentino)' },
+		],
 	},
 	{
 		title: "places at/around stanford",

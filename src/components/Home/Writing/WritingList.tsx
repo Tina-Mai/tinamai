@@ -15,18 +15,27 @@ const Item1 = () => (
 const Item2 = () => (
 	<motion.li variants={animations.itemVariants}>
 		<p className="text-slate-500">02</p>
-		<Link text="Deconstructing machine learning for product design" href="https://uxdesign.cc/machine-learning-for-product-designers-9d4002909964" />
-		<p className="italic pt-5 pb-2">UX Collective (2022)</p>
+		<p>Kids These Days</p>
+		<p className="pt-2 ">American exceptionalism, the phenomenon of gifted children, and the childhoods of exceptional people</p>
+		<p className="italic pt-5 pb-2">Forthcoming (2025)</p>
 	</motion.li>
 );
 
 const Item3 = () => (
 	<motion.li variants={animations.itemVariants}>
 		<p className="text-slate-500">03</p>
-		<p className="pb-2">you can find other pieces of mine (particularly fiction & personal essays) published across the internet. call it a scavenger hunt or whatever.</p>
+		<Link text="Deconstructing machine learning for product design" href="https://uxdesign.cc/machine-learning-for-product-designers-9d4002909964" />
+		<p className="italic pt-5 pb-2">UX Collective (2022)</p>
 	</motion.li>
 );
 
-const WritingList = [Item1, Item2, Item3];
+const Item4 = () => (
+	<motion.li variants={animations.itemVariants}>
+		<p className="text-slate-500">03</p>
+		<p className="pb-2">you can find other pieces of mine (particularly personal essays & fiction) published across the internet. call it a scavenger hunt or whatever.</p>
+	</motion.li>
+);
+
+const WritingList = [Item1, Item2, Item3, Item4];
 
 export default WritingList;
