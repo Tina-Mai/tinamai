@@ -72,17 +72,6 @@ export const metadata: Metadata = {
 	alternates: {
 		canonical: "https://tinabmai.com",
 	},
-	other: {
-		"additional-images": [
-			{
-				url: "/profile.jpg",
-				width: 135,
-				height: 180,
-				alt: "Tina Mai - Startup Founder and Developer",
-				type: "image/jpeg",
-			},
-		],
-	},
 };
 
 export default function RootLayout({
