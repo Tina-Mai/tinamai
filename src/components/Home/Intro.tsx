@@ -18,7 +18,7 @@ const Intro = () => {
 						<ScrambleText text="tinamai@stanford.edu" />
 					</motion.li>
 					<motion.li variants={animations.itemVariants}>
-						<Image src="/profile.jpg" alt="tina mai" height={180} width={135} quality={85} />
+						<Image src="/profile.jpg" alt="Tina Mai - Startup Founder and Developer" height={180} width={135} quality={85} priority={true} itemProp="image" />
 					</motion.li>
 
 					{/* nav */}

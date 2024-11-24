@@ -1,12 +1,12 @@
 import { MetadataRoute } from "next";
 
 export default function robots(): MetadataRoute.Robots {
-    return {
-        rules: {
-            userAgent: "*",
-            allow: ["/"],
-            disallow: []
-        },
-        sitemap: ["https://tinamai.syx/sitemap.xml"]
-    };
+	return {
+		rules: {
+			userAgent: "*",
+			allow: ["/"],
+			disallow: ["/private/"],
+		},
+		sitemap: ["https://tinabmai.com/sitemap.xml"],
+	};
 }

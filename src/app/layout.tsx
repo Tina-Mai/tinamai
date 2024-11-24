@@ -8,9 +8,20 @@ const description =
 	"Tina Mai is an 19-year-old startup founder and developer building in the machine learning space. She was recognized for creating an AI accessibility app for youth, a fintech software that won the World Series of Innovation, and more. She studies computer science and neuroscience at Stanford.";
 
 export const metadata: Metadata = {
-	title: title,
+	title: {
+		default: title,
+		template: `%s | ${title}`,
+	},
 	description: description,
 	keywords: ["tina mai", "tina", "mai", "stanford", "startup", "founder", "design", "engineer", "builder", "machine learning", "ai", "computer science", "product design"],
+	authors: [{ name: "Tina Mai" }],
+	creator: "Tina Mai",
+	publisher: "Tina Mai",
+	formatDetection: {
+		email: false,
+		address: false,
+		telephone: false,
+	},
 	openGraph: {
 		title: title,
 		description: description,
@@ -23,6 +34,7 @@ export const metadata: Metadata = {
 				width: 1200,
 				height: 630,
 				alt: "Tina Mai",
+				type: "image/png",
 			},
 		],
 		url: "https://tinabmai.com",
@@ -36,41 +48,41 @@ export const metadata: Metadata = {
 				width: 1200,
 				height: 630,
 				alt: "Tina Mai",
+				type: "image/png",
 			},
 		],
-		// use 'summary' for small image (e.g. profile pic), 'summary_large_image' for large
 		card: "summary_large_image",
 	},
 	robots: {
 		index: true,
 		follow: true,
-		nocache: true,
 		googleBot: {
 			index: true,
-			follow: false,
-			noimageindex: true,
+			follow: true,
 			"max-video-preview": -1,
 			"max-image-preview": "large",
 			"max-snippet": -1,
 		},
 	},
-	applicationName: title,
 	icons: {
-		icon: [
+		icon: [{ url: "/favicon.ico" }, { url: "/icon.png", type: "image/png" }],
+		apple: [{ url: "/apple-icon.png", type: "image/png" }],
+	},
+	metadataBase: new URL("https://tinabmai.com"),
+	alternates: {
+		canonical: "https://tinabmai.com",
+	},
+	other: {
+		"additional-images": [
 			{
-				url: "/favicon.ico",
-				type: "image/x-icon",
-			},
-		],
-		shortcut: [
-			{
-				url: "/favicon.ico",
-				type: "image/x-icon",
+				url: "/profile.jpg",
+				width: 135,
+				height: 180,
+				alt: "Tina Mai - Startup Founder and Developer",
+				type: "image/jpeg",
 			},
 		],
 	},
-	metadataBase: new URL("https://tinabmai.com"),
-	alternates: { canonical: "https://tinabmai.com" },
 };
 
 export default function RootLayout({
