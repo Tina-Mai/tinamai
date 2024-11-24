@@ -24,6 +24,7 @@ export const lists: ListSection[] = [
 			{ text: "The Opposite of Loneliness (Marina Keegan)" },
 			{ text: "The Great Gatsby (F. Scott Fitzgerald)" },
 			{ text: "Ready Player One (Ernest Cline)" },
+			{ text: "The Three-Body Problem (Cixin Liu)" },
 			{ text: "Tomorrow, and Tomorrow, and Tomorrow (Gabrielle Zevin)" },
 		],
 	},
@@ -56,7 +57,7 @@ export const lists: ListSection[] = [
 	},
 	{
 		title: "personal software",
-		items: [{ text: "Arc Browser" }, { text: "Cursor" }, { text: "Notion" }, { text: "Figma" }, { text: "Warp" }, { text: "Raycast" }],
+		items: [{ text: "Arc Browser" }, { text: "Cursor" }, { text: "Notion" }, { text: "Figma" }, { text: "Warp" }, { text: "Screen Studio" }, { text: "Raycast" }],
 	},
 	// {
 	// 	title: "favorite of all time :)",
