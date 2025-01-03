@@ -13,14 +13,15 @@ const Item1 = () => (
 const Item2 = () => (
 	<motion.li variants={animations.itemVariants}>
 		<p className="text-slate-500">02</p>
-		researching human simulating agents & building new interfaces to deploy them
+		researching biological AI and building machine learning systems
 	</motion.li>
 );
 
 const Item3 = () => (
 	<motion.li variants={animations.itemVariants}>
 		<p className="text-slate-500">03</p>
-		helping friends design interfaces for mechanistic interpretability @ <Link text="Tilde" href="https://tilderesearch.com" />
+		helping friends craft interfaces for <Link text="mechanistic interpretability" href="https://tilderesearch.com" />, build <Link text="AI-embedded spreadsheets" href="https://paradigmai.com" />
+		, and more
 	</motion.li>
 );
 
