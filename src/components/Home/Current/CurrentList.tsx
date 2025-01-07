@@ -6,7 +6,7 @@ import Link from "@/components/Global/Link";
 const Item1 = () => (
 	<motion.li variants={animations.itemVariants}>
 		<p className="text-slate-500">01</p>
-		studying CS & theoretical neuroscience @ <Link text="Stanford" href="https://tina.sites.stanford.edu" />
+		studying CS & computational biology @ <Link text="Stanford" href="https://tina.sites.stanford.edu" />
 	</motion.li>
 );
 
