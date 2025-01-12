@@ -13,7 +13,7 @@ const Item1 = () => (
 const Item2 = () => (
 	<motion.li variants={animations.itemVariants}>
 		<p className="text-slate-500">02</p>
-		researching biological AI and building machine learning systems
+		researching biological AI and applying machine learning to enhancing lifespan/healthspan
 	</motion.li>
 );
 

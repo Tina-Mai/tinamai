@@ -35,6 +35,7 @@ export const lists: ListSection[] = [
 			{ text: '"How to Do Great Work" (Paul Graham)' },
 			{ text: '"Dostoevsky as Lover" (Henrik Karlsson)' },
 			{ text: '"Always Be Optimizing" (Jia Tolentino)' },
+			{ text: '"The Opposite of Loneliness" (Marina Keegan)' },
 		],
 	},
 	{
