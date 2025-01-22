@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 		template: `%s | ${title}`,
 	},
 	description: description,
-	keywords: ["tina mai", "tina", "mai", "stanford", "startup", "founder", "design", "engineer", "builder", "machine learning", "ai", "computer science", "product design"],
+	keywords: ["tina mai", "tina", "mai", "tinamai", "stanford", "startup", "founder", "design", "engineer", "builder", "machine learning", "ai", "computer science", "product design"],
 	authors: [{ name: "Tina Mai" }],
 	creator: "Tina Mai",
 	publisher: "Tina Mai",
