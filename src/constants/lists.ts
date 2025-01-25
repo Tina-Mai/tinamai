@@ -34,7 +34,8 @@ export const lists: ListSection[] = [
 			{ text: '"This is Water" (David Foster Wallace)' },
 			{ text: '"How to Do Great Work" (Paul Graham)' },
 			{ text: '"Dostoevsky as Lover" (Henrik Karlsson)' },
-			{ text: '"Always Be Optimizing" (Jia Tolentino)' },
+			{ text: '"You and Your Research" (Richard Hamming)' },
+			{ text: '"How to Think in Writing" (Henrik Karlsson)' },
 		],
 	},
 	{
@@ -58,6 +59,18 @@ export const lists: ListSection[] = [
 			{ text: "Uluh, East Village" },
 			{ text: "Antidote, Williamsburg" },
 			{ text: "La Cabra, SoHo" },
+		],
+	},
+	{
+		title: "journals, blogs, etc.",
+		items: [
+			{ text: "Escaping Flatland (Henrik Karlsson)" },
+			{ text: "Works in Progress (Stripe Press)" },
+			{ text: "Kernel Magazine (Reboot)" },
+			{ text: "Gwern.net (Gwern Branwen)" },
+			{ text: "Asimov Press" },
+			{ text: "Asterisk Magazine" },
+			{ text: "The Sephist (Linus Lee)" },
 		],
 	},
 	{
