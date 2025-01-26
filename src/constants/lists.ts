@@ -36,6 +36,7 @@ export const lists: ListSection[] = [
 			{ text: '"Dostoevsky as Lover" (Henrik Karlsson)' },
 			{ text: '"You and Your Research" (Richard Hamming)' },
 			{ text: '"How to Think in Writing" (Henrik Karlsson)' },
+			{ text: '"Notes on Puzzles" (Nabeel S. Qureshi)' },
 		],
 	},
 	{
@@ -77,6 +78,10 @@ export const lists: ListSection[] = [
 		title: "personal software",
 		items: [{ text: "Arc Browser" }, { text: "Cursor" }, { text: "Notion" }, { text: "Figma" }, { text: "Warp" }, { text: "Raycast" }, { text: "Screen Studio" }, { text: "Linear" }],
 	},
+	// {
+	// 	title: "hardware",
+	// 	items: [{ text: 'Macbook Pro 14"' }, { text: "Olympus Mju Zoom 140 (film camera)" }, { text: "Oura Ring 4" }],
+	// },
 	{
 		title: "favorite of all time :)",
 		items: [{ text: "Mason Wang", link: "https://masonjwang.com" }],
