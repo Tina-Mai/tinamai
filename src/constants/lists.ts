@@ -32,11 +32,12 @@ export const lists: ListSection[] = [
 		title: "essays",
 		items: [
 			{ text: '"This is Water" (David Foster Wallace)' },
-			{ text: '"How to Do Great Work" (Paul Graham)' },
+			{ text: '"Meditations on Moloch" (Scott Alexander)' },
 			{ text: '"Dostoevsky as Lover" (Henrik Karlsson)' },
 			{ text: '"You and Your Research" (Richard Hamming)' },
-			{ text: '"How to Think in Writing" (Henrik Karlsson)' },
+			{ text: '"How to Do Great Work" (Paul Graham)' },
 			{ text: '"Notes on Puzzles" (Nabeel S. Qureshi)' },
+			{ text: '"How to Think in Writing" (Henrik Karlsson)' },
 		],
 	},
 	{
