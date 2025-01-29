@@ -8,7 +8,7 @@ interface ListSection {
 	items: ListItem[];
 }
 
-// TODO: ideas: fonts, hardware (film camera, macbook pro, airpods, etc.)
+// TODO: ideas: fonts, hardware (film camera, macbook pro, airpods, wearbles like Oura Ring, etc.)
 
 export const lists: ListSection[] = [
 	{
@@ -31,8 +31,8 @@ export const lists: ListSection[] = [
 	{
 		title: "essays",
 		items: [
-			{ text: '"This is Water" (David Foster Wallace)' },
 			{ text: '"Meditations on Moloch" (Scott Alexander)' },
+			{ text: '"This is Water" (David Foster Wallace)' },
 			{ text: '"Dostoevsky as Lover" (Henrik Karlsson)' },
 			{ text: '"You and Your Research" (Richard Hamming)' },
 			{ text: '"How to Do Great Work" (Paul Graham)' },
