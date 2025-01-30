@@ -6,14 +6,14 @@ import Link from "@/components/Global/Link";
 const Item1 = () => (
 	<motion.li variants={animations.itemVariants}>
 		<p className="text-slate-500">01</p>
-		studying CS & computational biology @ <Link text="Stanford" href="https://tina.sites.stanford.edu" />
+		studying CS & biophysics (self-designed major) @ <Link text="Stanford" href="https://tina.sites.stanford.edu" />
 	</motion.li>
 );
 
 const Item2 = () => (
 	<motion.li variants={animations.itemVariants}>
 		<p className="text-slate-500">02</p>
-		researching biological AI and applying machine learning to enhancing lifespan/healthspan
+		researching biological machine learning to make humans less fragile
 	</motion.li>
 );
 
