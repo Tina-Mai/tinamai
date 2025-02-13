@@ -3,6 +3,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import ScrambleText from "@/components/Global/ScrambleText";
 import Link from "@/components/Global/Link";
+import coverImg from "@/assets/kids-these-days/cover.jpeg";
 
 export default function KidsTheseDays() {
 	return (
@@ -29,7 +30,7 @@ export default function KidsTheseDays() {
 					animate={{ opacity: 1, scale: 1 }}
 					transition={{ delay: 0.3, duration: 0.8 }}
 				>
-					{/* <Image src={coverImg} alt="cover" className="max-w-72 sm:max-w-none w-full sm:h-full object-cover" /> */}
+					<Image src={coverImg} alt="cover" className="max-w-72 sm:max-w-none w-full sm:h-full object-cover" />
 				</motion.div>
 			</div>
 
