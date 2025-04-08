@@ -31,7 +31,7 @@ const Item3 = () => (
 
 const Item4 = () => (
 	<motion.li variants={animations.itemVariants}>
-		<p className="text-slate-500">03</p>
+		<p className="text-slate-500">04</p>
 		<p className="pb-2">you can find other pieces of mine (particularly personal essays & fiction) published across the internet. call it a scavenger hunt or whatever.</p>
 	</motion.li>
 );

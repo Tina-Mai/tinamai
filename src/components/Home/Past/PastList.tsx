@@ -11,7 +11,7 @@ const Item1 = () => (
 			<Link text="Business Insider" href="https://kndrd.com/press" />, <p className="inline">backed by Cal Henderson (Slack), Matt Higgins (Shark Tank), etc.</p>
 		</div>
 
-		<div>started @ 17, stepped back after 2y to focus on more technical research & deeptech projects.</div>
+		<div>started @ 17, stepped back after 2y to work on the most important problems i want to see solved.</div>
 	</motion.li>
 );
 
