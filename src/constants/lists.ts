@@ -77,11 +77,11 @@ export const lists: ListSection[] = [
 	},
 	{
 		title: "personal software",
-		items: [{ text: "Arc Browser" }, { text: "Cursor" }, { text: "Notion" }, { text: "Figma" }, { text: "Warp" }, { text: "Raycast" }, { text: "Screen Studio" }, { text: "Linear" }],
+		items: [{ text: "Arc Browser" }, { text: "Cursor" }, { text: "Notion" }, { text: "Figma" }, { text: "Warp" }, { text: "Raycast" }, { text: "Retro" }, { text: "Linear" }],
 	},
 	// {
 	// 	title: "hardware",
-	// 	items: [{ text: 'Macbook Pro 14"' }, { text: "Olympus Mju Zoom 140 (film camera)" }, { text: "Oura Ring 4" }],
+	// 	items: [{ text: 'Macbook Pro 14" M5' }, { text: "Olympus Mju Zoom 140 (film camera)" }, { text: "Oura Ring 4" }],
 	// },
 	{
 		title: "favorite of all time :)",
