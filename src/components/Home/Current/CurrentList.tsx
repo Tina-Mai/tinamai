@@ -8,7 +8,8 @@ const Item1 = () => (
 		<p className="text-slate-500">01</p>
 		<div className="pb-5">the most important problem i want to solve in my lifetime is control over when we die. i think biological machine learning is the key to unlocking this.</div>
 		<div>
-			thus, my work is in researching and deploying applied biological intelligence, currently @ <Link text="Valthos" href="https://valthos.com" />.
+			thus, my work is in researching and deploying applied biological intelligence, currently @ <Link text="Valthos" href="https://arcinstitute.org/" /> and the{" "}
+			<Link text="Arc Institute" href="https://valthos.com" />.
 		</div>
 	</motion.li>
 );
