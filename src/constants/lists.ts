@@ -45,7 +45,7 @@ export const lists: ListSection[] = [
 		items: [
 			{ text: "CoHo jazz nights" },
 			{ text: "late night studying at On Call Café" },
-			{ text: "dinner at MJ Sushi" },
+			{ text: "picking up a book at Kepler's" },
 			{ text: "climbing the roof of Mem Aud" },
 			{ text: "strolling University Ave & getting Salt & Straw" },
 			{ text: "ordering Zareen's" },
@@ -56,7 +56,7 @@ export const lists: ListSection[] = [
 		title: "places in nyc",
 		items: [
 			{ text: "McNally Jackson Books, SoHo" },
-			{ text: "Charlie Bird, West Village" },
+			{ text: "Bathhouse, Flatiron" },
 			{ text: "Mercer Labs, Fidi" },
 			{ text: "Uluh, East Village" },
 			{ text: "Antidote, Williamsburg" },
