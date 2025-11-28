@@ -13,7 +13,7 @@ interface ListSection {
 export const lists: ListSection[] = [
 	{
 		title: "films",
-		items: [{ text: "Interstellar" }, { text: "Inception" }, { text: "The Imitation Game" }, { text: "Arrival" }, { text: "Iron Man" }],
+		items: [{ text: "Interstellar" }, { text: "Inception" }, { text: "The Imitation Game" }, { text: "Arrival" }, { text: "Spirited Away" }, { text: "Iron Man" }],
 	},
 	{
 		title: "books",
@@ -81,7 +81,7 @@ export const lists: ListSection[] = [
 	},
 	// {
 	// 	title: "hardware",
-	// 	items: [{ text: 'Macbook Pro 14" M5' }, { text: "Olympus Mju Zoom 140 (film camera)" }, { text: "Oura Ring 4" }],
+	// 	items: [{ text: "Olympus Mju Zoom 140 (film camera)" }, { text: "Kodak Portra 400 35mm film" }, { text: "WHOOP 5.0 (health wearable)" }, { text: 'Macbook Pro 14" M5' }],
 	// },
 	{
 		title: "favorite of all time :)",
