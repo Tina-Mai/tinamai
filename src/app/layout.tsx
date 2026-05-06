@@ -5,7 +5,7 @@ import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 const title = "Tina Mai";
-const description = "19-year-old builder, machine learning researcher, and designer. Studying Computer Science and Computational Biology at Stanford University.";
+const description = "building the industrial research lab to make humans less fragile. previously biological machine learning and biodefense. CS @ Stanford.";
 
 export const metadata: Metadata = {
 	title: {
