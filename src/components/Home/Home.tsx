@@ -1,7 +1,7 @@
 import Intro from "./Intro";
 import Current from "./Current/Current";
 import Past from "./Past/Past";
-import Writing from "./Writing/Writing";
+import Other from "./Other/Other";
 import { motion } from "framer-motion";
 
 export default function Home() {
@@ -21,7 +21,7 @@ export default function Home() {
 				<div className="grid text-left sm:mb-0 sm:w-3/5 xs:grid-cols-3 gap-10">
 					<Current />
 					<Past />
-					<Writing />
+					<Other />
 				</div>
 			</div>
 		</main>
