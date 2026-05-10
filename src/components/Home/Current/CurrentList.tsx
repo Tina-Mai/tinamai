@@ -6,7 +6,7 @@ import Link from "@/components/Global/Link";
 const Item1 = () => (
 	<motion.li variants={animations.itemVariants}>
 		<p className="text-slate-500">01</p>
-		<div className="pb-5">the most important problem i want to solve in my lifetime is to overcome premature death from luck. i think of this as an engineering problem.</div>
+		<div className="pb-5">the most important problem i want to solve in my lifetime is to overcome premature death. i think of this as an engineering problem.</div>
 		<div className="pb-5">i'm building an industrial research lab creating hardware and physiological ML systems to give people plot armor.</div>
 		<div>(more on this soon!)</div>
 	</motion.li>
