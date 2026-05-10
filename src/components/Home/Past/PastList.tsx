@@ -24,7 +24,7 @@ const Item2 = () => (
 );
 
 const Item3 = () => (
-	<motion.li variants={animations.itemVariants}>
+	<motion.li variants={animations.itemVariants} data-nosnippet>
 		<p className="text-slate-500">03</p>
 		<div className="pb-5">
 			<p className="inline">co-founder/CTO @</p> <Link text="Kndrd" href="https://kndrd.com" />. <p className="inline">featured in</p>{" "}
