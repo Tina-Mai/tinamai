@@ -18,7 +18,7 @@ const Item2 = () => (
 		<p className="text-slate-500">02</p>
 		<div>
 			<p className="inline">research @ the</p> <Link text="Arc Institute" href="https://arcinstitute.org/" />
-			<p className="inline">, turning biology into a programmable discipline</p>
+			<p className="inline">, created the first high-level</p> <Link text="programming language for generative biology" href="https://proto.evodesign.org/" />
 		</div>
 	</motion.li>
 );
