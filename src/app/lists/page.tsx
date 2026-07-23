@@ -15,7 +15,7 @@ export default function Lists() {
 					<ScrambleText text="[ ← back to home ]" />
 				</motion.a>
 				<motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0 }} className="pb-10">
-					<ScrambleText text="FAVORITES I'VE COLLECTED THROUGH 19 YEARS OF LIVING" settings={{ speed: 1, tick: 5 }} />
+					<ScrambleText text="FAVORITES I'VE COLLECTED THROUGH 21 YEARS OF LIVING" settings={{ speed: 1, tick: 5 }} />
 				</motion.div>
 				<motion.div className="grid sm:grid-cols-[65px_1fr] gap-x-10 sm:gap-y-10 gap-y-5" variants={animations.containerVariants} initial="hidden" animate="show">
 					{lists.map((section, index) => (
