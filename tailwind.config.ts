@@ -7,7 +7,7 @@ const config: Config = {
 			colors: {
 				// dark: "#1E1E1E",
 				dark: "#17131D",
-				light: "#FEFFF8",
+				light: "#E8E7E8",
 			},
 			fontFamily: {
 				serif: ["EB Garamond", "serif"],

@@ -26,9 +26,12 @@ const Intro = () => {
 						<motion.li variants={animations.itemVariants} className="body">
 							<ScrambleText text="ON HERE" />
 						</motion.li>
-						<div className="sm:block sm:-space-y-5 flex flex-wrap">
+						<div className="sm:block gap-1 flex flex-wrap">
 							<motion.li variants={animations.itemVariants} key={null}>
-								<Link text="lists" href="/lists" className="pr-2 space-x-1" />
+								<Link text="lists" href="/lists" className="pr-5 space-x-1" />
+							</motion.li>
+							<motion.li variants={animations.itemVariants} key={null}>
+								<Link text="35mm" href="/35mm" className="pr-5 space-x-1" />
 							</motion.li>
 						</div>
 					</div>
@@ -38,11 +41,10 @@ const Intro = () => {
 						<motion.li variants={animations.itemVariants} className="body">
 							<ScrambleText text="ELSEWHERE" />
 						</motion.li>
-						<div className="sm:block sm:-space-y-5 flex flex-wrap">
+						<div className="sm:block gap-1 flex flex-wrap">
 							{socials.map((social, index) => (
 								<motion.li variants={animations.itemVariants} key={social.name}>
-									<Link text={social.name} href={social.url} className="pr-2 space-x-1" />
-									{index < socials.length - 1 && <p className="pr-2 sm:pr-0 sm:invisible sm:block inline">•</p>}
+									<Link text={social.name} href={social.url} className="pr-5 space-x-1" />
 								</motion.li>
 							))}
 						</div>

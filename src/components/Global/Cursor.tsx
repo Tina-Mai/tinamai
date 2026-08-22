@@ -2,7 +2,11 @@ import React, { useEffect, useRef } from "react";
 import Image from "next/image";
 import cursor from "@/assets/cursor.svg";
 
-const Cursor = () => {
+type CursorProps = {
+	color?: "white" | "black";
+};
+
+const Cursor = ({ color = "white" }: CursorProps) => {
 	const cursorRef = useRef<HTMLImageElement>(null); // use ref to directly manipulate the DOM element
 
 	useEffect(() => {
@@ -53,6 +57,7 @@ const Cursor = () => {
 				zIndex: 20,
 				pointerEvents: "none", // ensure the image does not interfere with other elements
 				display: "none", // start with cursor hidden
+				filter: color === "black" ? "invert(1)" : undefined, // svg is white by default; invert for light backgrounds
 			}}
 		/>
 	);
