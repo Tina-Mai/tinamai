@@ -39,6 +39,29 @@ const gridItemVariants: Variants = {
 	},
 };
 
+const stackVariants: Variants = {
+	hidden: {},
+	show: {
+		transition: { delayChildren: 0.3, staggerChildren: 0.15 },
+	},
+	exit: {
+		opacity: 0,
+		transition: { duration: 0.25 },
+	},
+};
+
+const stackItemVariants: Variants = {
+	hidden: { y: -20, opacity: 0 },
+	show: {
+		y: 0,
+		opacity: 1,
+		transition: {
+			y: { type: "spring", stiffness: 100, damping: 20 },
+			opacity: { duration: 0.5 },
+		},
+	},
+};
+
 // deterministic tilt
 function tiltFor(i: number, maxDeg: number) {
 	const n = Math.sin((i + 1) * 12.9898) * 43758.5453;
@@ -89,7 +112,7 @@ function StackSlide({ pic, i, shouldLoad, isTop }: { pic: Pic; i: number; should
 				className={`relative h-full max-w-full transition-[filter] duration-[650ms] ${isTop ? "" : "blur-[2px] grayscale brightness-125 contrast-75"}`}
 				style={{ aspectRatio: `${pic.imgSrc.width} / ${pic.imgSrc.height}`, transform: `rotate(${tiltFor(i, 3)}deg)` }}
 			>
-				<div className={`absolute inset-0 bg-zinc-300 ${shouldLoad && imgLoaded ? "invisible" : "visible animate-pulse"}`} />
+				<div className={`absolute inset-0 bg-zinc-300 transition-opacity duration-500 ${shouldLoad && imgLoaded ? "opacity-0" : "animate-pulse opacity-100"}`} />
 				{shouldLoad && (
 					<Image
 						src={pic.imgSrc}
@@ -99,7 +122,7 @@ function StackSlide({ pic, i, shouldLoad, isTop }: { pic: Pic; i: number; should
 						quality={IMAGE_QUALITY}
 						priority={isTop}
 						onLoad={() => setImgLoaded(true)}
-						className={`object-contain ${imgLoaded ? "visible" : "invisible"}`}
+						className={`object-contain transition-opacity duration-500 ${imgLoaded ? "opacity-100" : "opacity-0"}`}
 					/>
 				)}
 			</div>
@@ -118,6 +141,17 @@ export default function Film() {
 		setIndex(i);
 		setHovered(null);
 		setView("stack");
+	};
+
+	const handleStackClick = (swiper: SwiperType, event: MouseEvent | TouchEvent | PointerEvent) => {
+		const clientX = "clientX" in event ? event.clientX : event.changedTouches[0]?.clientX;
+		if (clientX === undefined) return;
+
+		const bounds = swiper.el.getBoundingClientRect();
+		const clickedLeftSide = clientX < bounds.left + bounds.width / 3;
+
+		if (clickedLeftSide && swiper.realIndex > 0) swiper.slidePrev();
+		else if (!clickedLeftSide && swiper.realIndex < pics.length - 1) swiper.slideNext();
 	};
 
 	useEffect(() => {
@@ -183,48 +217,52 @@ export default function Film() {
 					) : (
 						<motion.div
 							key="stack"
-							initial={{ opacity: 0, scale: 0.94, y: 16 }}
-							animate={{ opacity: 1, scale: 1, y: 0 }}
-							exit={{ opacity: 0, scale: 0.97, y: -8 }}
-							transition={{ type: "spring", stiffness: 260, damping: 26 }}
+							variants={stackVariants}
+							initial="hidden"
+							animate="show"
+							exit="exit"
 							className="vertical h-full w-full center-v center-h space-y-10"
 						>
 							<div className="vertical w-full center-h gap-5">
-								<Swiper
-									effect="cards"
-									modules={[EffectCards]}
-									cardsEffect={{ slideShadows: false, perSlideRotate: 2.5, perSlideOffset: 8 }}
-									speed={650}
-									initialSlide={index}
-									onSwiper={(s) => (swiperRef.current = s)}
-									onSlideChange={(s) => setIndex(s.realIndex)}
-									onClick={(s) => s.slideNext()}
-									className="h-[45vh]"
-									style={{ width: "min(66vh, calc(100vw - 6rem))" }}
-								>
-									{pics.map((p, i) => {
-										const dist = Math.abs(i - index);
-										return (
-											<SwiperSlide
-												key={p.imgSrc.src}
-												className="!overflow-visible"
-												style={{
-													background: "transparent",
-													opacity: dist <= VISIBLE_WINDOW ? 1 : 0,
-													visibility: dist <= VISIBLE_WINDOW ? "visible" : "hidden",
-													transition: "opacity 0.65s, visibility 0.65s",
-												}}
-											>
-												<StackSlide pic={p} i={i} shouldLoad={dist <= LOAD_WINDOW} isTop={i === index} />
-											</SwiperSlide>
-										);
-									})}
-								</Swiper>
+								<motion.div variants={stackItemVariants}>
+									<Swiper
+										effect="cards"
+										modules={[EffectCards]}
+										cardsEffect={{ slideShadows: false, perSlideRotate: 2.5, perSlideOffset: 8 }}
+										speed={650}
+										initialSlide={index}
+										onSwiper={(s) => (swiperRef.current = s)}
+										onSlideChange={(s) => setIndex(s.realIndex)}
+										onClick={handleStackClick}
+										className="h-[45vh]"
+										style={{ width: "min(66vh, calc(100vw - 6rem))" }}
+									>
+										{pics.map((p, i) => {
+											const dist = Math.abs(i - index);
+											return (
+												<SwiperSlide
+													key={p.imgSrc.src}
+													className="!overflow-visible"
+													style={{
+														background: "transparent",
+														opacity: dist <= VISIBLE_WINDOW ? 1 : 0,
+														visibility: dist <= VISIBLE_WINDOW ? "visible" : "hidden",
+														transition: "opacity 0.65s, visibility 0.65s",
+													}}
+												>
+													<StackSlide pic={p} i={i} shouldLoad={dist <= LOAD_WINDOW} isTop={i === index} />
+												</SwiperSlide>
+											);
+										})}
+									</Swiper>
+								</motion.div>
 
-								<ScrambleText key={`stock-${index}`} className="text-center italic text-zinc-400" text={pics[index].filmStock} />
+								<motion.div variants={stackItemVariants}>
+									<ScrambleText key={`stock-${index}`} className="text-center italic text-zinc-400" text={pics[index].filmStock} />
+								</motion.div>
 							</div>
 
-							<div className="horizontal w-full center-v max-w-xs gap-5">
+							<motion.div variants={stackItemVariants} className="horizontal w-full center-v max-w-xs gap-5">
 								<button
 									onClick={() => swiperRef.current?.slidePrev()}
 									aria-label="previous photo"
@@ -248,7 +286,7 @@ export default function Film() {
 								>
 									&gt;
 								</button>
-							</div>
+							</motion.div>
 						</motion.div>
 					)}
 				</AnimatePresence>
@@ -268,7 +306,16 @@ export default function Film() {
 					</AnimatePresence>
 				)}
 
-				<div className={`horizontal w-full justify-between transition-opacity duration-300 ${view === "grid" ? "pointer-events-none opacity-0" : "opacity-100"}`}>
+				<motion.div
+					initial={{ opacity: 0, y: -20 }}
+					animate={{ opacity: view === "grid" ? 0 : 1, y: view === "grid" ? -8 : 0 }}
+					transition={{
+						delay: view === "stack" ? 0.9 : 0,
+						y: { type: "spring", stiffness: 100, damping: 20 },
+						opacity: { duration: 0.5 },
+					}}
+					className={`horizontal w-full justify-between ${view === "grid" ? "pointer-events-none" : ""}`}
+				>
 					<div className="text-zinc-400">35mm film</div>
 					<time dateTime={now?.toISOString()} className="text-zinc-400">
 						{now?.toLocaleTimeString(undefined, {
@@ -278,7 +325,7 @@ export default function Film() {
 							hour12: false,
 						}) ?? "--:--:--"}
 					</time>
-				</div>
+				</motion.div>
 			</div>
 		</div>
 	);
