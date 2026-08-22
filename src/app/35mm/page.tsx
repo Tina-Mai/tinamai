@@ -20,35 +20,18 @@ const LOAD_WINDOW = 3; // neighbors on each side that keep their full image moun
 type View = "grid" | "stack";
 type Pic = (typeof pics)[number];
 
-// deterministic tilt per photo: alternating direction so neighboring photos in
-// the pile never lean the same way, magnitude varied by a stable hash so it
-// still feels organic. identical on server/client = no hydration mismatch.
+// deterministic tilt
 function tiltFor(i: number, maxDeg: number) {
 	const n = Math.sin((i + 1) * 12.9898) * 43758.5453;
 	const magnitude = 0.35 + 0.65 * (n - Math.floor(n));
 	return (i % 2 === 0 ? 1 : -1) * magnitude * maxDeg;
 }
 
-
-function GridCell({
-	pic,
-	label,
-	dimmed,
-	onClick,
-	onMouseEnter,
-	onMouseLeave,
-}: {
-	pic: Pic;
-	label: string;
-	dimmed: boolean;
-	onClick: () => void;
-	onMouseEnter: () => void;
-	onMouseLeave: () => void;
-}) {
+function GridCell({ pic, label, dimmed, onClick, onMouseEnter, onMouseLeave }: { pic: Pic; label: string; dimmed: boolean; onClick: () => void; onMouseEnter: () => void; onMouseLeave: () => void }) {
 	const [thumbLoaded, setThumbLoaded] = useState(false);
 
 	return (
-		<button onClick={onClick} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} aria-label={`view ${pic.alt} in stack`} className="group vertical gap-3 cursor-none">
+		<button onClick={onClick} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} aria-label={`view ${pic.alt} in stack`} className="group vertical gap-3 cursor-none outline-none">
 			<span className="self-start text-zinc-400 transition-colors duration-300 group-hover:text-zinc-800">{label}.</span>
 			<div className="flex h-48 w-full items-center justify-center">
 				<div
@@ -114,8 +97,8 @@ export default function Film() {
 	useEffect(() => {
 		const onKey = (e: KeyboardEvent) => {
 			if (view !== "stack") return;
-			if (e.key === "ArrowRight") swiperRef.current?.slideNext();
-			// no going back past the first photo: it's the start of the stack
+			// the stack has a fixed start and end: no wrapping in either direction
+			if (e.key === "ArrowRight" && swiperRef.current && swiperRef.current.realIndex < pics.length - 1) swiperRef.current.slideNext();
 			else if (e.key === "ArrowLeft" && swiperRef.current && swiperRef.current.realIndex > 0) swiperRef.current.slidePrev();
 		};
 		window.addEventListener("keydown", onKey);
@@ -139,11 +122,11 @@ export default function Film() {
 					</motion.a>
 
 					<div className="horizontal gap-2">
-						<button onClick={() => setView("stack")} aria-pressed={view === "stack"} className="body cursor-none">
+						<button onClick={() => setView("stack")} aria-pressed={view === "stack"} className="body cursor-none outline-none">
 							<ScrambleText className={view === "stack" ? "" : "text-zinc-400 hover:text-zinc-800 transition-colors duration-300"} text={view === "stack" ? "[ stack ]" : "stack"} />
 						</button>
 						<span className="text-zinc-400">/</span>
-						<button onClick={() => setView("grid")} aria-pressed={view === "grid"} className="body cursor-none">
+						<button onClick={() => setView("grid")} aria-pressed={view === "grid"} className="body cursor-none outline-none">
 							<ScrambleText className={view === "grid" ? "" : "text-zinc-400 hover:text-zinc-800 transition-colors duration-300"} text={view === "grid" ? "[ grid ]" : "grid"} />
 						</button>
 					</div>
@@ -186,7 +169,6 @@ export default function Film() {
 									modules={[EffectCards]}
 									cardsEffect={{ slideShadows: false, perSlideRotate: 2.5, perSlideOffset: 8 }}
 									speed={650}
-									rewind
 									initialSlide={index}
 									onSwiper={(s) => (swiperRef.current = s)}
 									onSlideChange={(s) => setIndex(s.realIndex)}
@@ -199,10 +181,9 @@ export default function Film() {
 										return (
 											<SwiperSlide
 												key={p.imgSrc.src}
+												className="!overflow-visible"
 												style={{
 													background: "transparent",
-													// only the pile's top few cards are visible; the other
-													// fanned-out slides would otherwise peek as stray boxes
 													opacity: dist <= VISIBLE_WINDOW ? 1 : 0,
 													visibility: dist <= VISIBLE_WINDOW ? "visible" : "hidden",
 													transition: "opacity 0.65s, visibility 0.65s",
@@ -222,20 +203,31 @@ export default function Film() {
 									onClick={() => swiperRef.current?.slidePrev()}
 									aria-label="previous photo"
 									disabled={index === 0}
-									className={`body cursor-none transition-opacity duration-300 ${index === 0 ? "pointer-events-none opacity-0" : "opacity-100"}`}
+									className={`body flex size-11 -m-3.5 cursor-none items-center justify-center outline-none transition-[color,opacity] duration-300 hover:text-zinc-500 ${
+										index === 0 ? "pointer-events-none opacity-0" : "opacity-100"
+									}`}
 								>
-									<ArrowLeftIcon className="size-3.5 hover:text-zinc-500 transition-colors duration-300" />
+									&lt;
 								</button>
 								<span>
 									{String(index + 1).padStart(3, "0")} / {String(pics.length).padStart(3, "0")}
 								</span>
-								<button onClick={() => swiperRef.current?.slideNext()} aria-label="next photo" className="body cursor-none">
-									<ArrowRightIcon className="size-3.5 hover:text-zinc-500 transition-colors duration-300" />
+								<button
+									onClick={() => swiperRef.current?.slideNext()}
+									aria-label="next photo"
+									disabled={index === pics.length - 1}
+									className={`body flex size-11 -m-3.5 cursor-none items-center justify-center outline-none transition-[color,opacity] duration-300 hover:text-zinc-500 ${
+										index === pics.length - 1 ? "pointer-events-none opacity-0" : "opacity-100"
+									}`}
+								>
+									&gt;
 								</button>
 							</div>
 						</motion.div>
 					)}
 				</AnimatePresence>
+
+				{view === "grid" && <div className="flex w-full center-v text-zinc-400 italic">end of roll.</div>}
 
 				<div className={`horizontal w-full justify-between transition-opacity duration-300 ${view === "grid" ? "pointer-events-none opacity-0" : "opacity-100"}`}>
 					<ScrambleText text="cameras" />

@@ -10,9 +10,6 @@ import flyingCar from "@/assets/35mm/flying-car.jpg";
 import lab from "@/assets/35mm/lab.jpg";
 import market from "@/assets/35mm/market.jpg";
 import neo from "@/assets/35mm/neo.jpg";
-import oxford from "@/assets/35mm/oxford.jpg";
-import peacock from "@/assets/35mm/peacock.jpg";
-import pointReyes from "@/assets/35mm/point-reyes.jpg";
 import river from "@/assets/35mm/river.jpg";
 import roof from "@/assets/35mm/roof.jpg";
 import seals from "@/assets/35mm/seals.jpg";
@@ -22,6 +19,14 @@ import studio from "@/assets/35mm/studio.jpg";
 import trolley from "@/assets/35mm/trolley.jpg";
 import utv from "@/assets/35mm/utv.jpg";
 import vegetables from "@/assets/35mm/vegetables.jpg";
+import tea from "@/assets/35mm/tea.jpg";
+import contrary from "@/assets/35mm/contrary.jpg";
+import robot from "@/assets/35mm/robot.jpeg";
+import storefront from "@/assets/35mm/storefront.jpg";
+import naples from "@/assets/35mm/naples.jpg";
+import oxford from "@/assets/35mm/oxford.jpg";
+import peacock from "@/assets/35mm/peacock.jpg";
+import pointReyes from "@/assets/35mm/point-reyes.jpg";
 
 interface FilmPic {
 	imgSrc: StaticImageData;
@@ -38,18 +43,23 @@ export const pics: FilmPic[] = [
 	{ imgSrc: confused, alt: "confused", filmStock: "kodak gold 200" },
 	{ imgSrc: dumplings, alt: "dumplings", filmStock: "portra 400" },
 	{ imgSrc: pointReyes, alt: "point reyes", filmStock: "portra 400" },
+	{ imgSrc: robot, alt: "robot", filmStock: "portra 400" },
+	{ imgSrc: neo, alt: "neo", filmStock: "portra 400" },
 	{ imgSrc: lab, alt: "lab", filmStock: "portra 160" },
 	{ imgSrc: roof, alt: "roof", filmStock: "portra 400" },
 	{ imgSrc: vegetables, alt: "vegetables", filmStock: "fujifilm 400" },
 	{ imgSrc: market, alt: "market", filmStock: "fujifilm 400" },
 	{ imgSrc: oxford, alt: "oxford", filmStock: "kodak gold 200" },
-	{ imgSrc: neo, alt: "neo", filmStock: "portra 400" },
+	{ imgSrc: contrary, alt: "contrary", filmStock: "portra 400" },
 	{ imgSrc: peacock, alt: "peacock", filmStock: "portra 400" },
 	{ imgSrc: seine, alt: "seine", filmStock: "kodak gold 200" },
 	{ imgSrc: studio, alt: "studio", filmStock: "kodak gold 200" },
 	{ imgSrc: charlotte, alt: "charlotte", filmStock: "kodak gold 200" },
+	{ imgSrc: tea, alt: "tea", filmStock: "kodak gold 200" },
 	{ imgSrc: river, alt: "river", filmStock: "portra 400" },
+	{ imgSrc: storefront, alt: "storefront", filmStock: "kodak gold 200" },
 	{ imgSrc: donkey, alt: "donkey", filmStock: "kodak gold 200" },
+	{ imgSrc: naples, alt: "naples", filmStock: "kodak gold 200" },
 	{ imgSrc: trolley, alt: "trolley", filmStock: "kodak gold 200" },
 	{ imgSrc: seals, alt: "seals", filmStock: "portra 400" },
 ];
