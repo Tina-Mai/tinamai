@@ -17,6 +17,7 @@
     "next-sitemap": "^4.2.3",
     "react": "^18",
     "react-dom": "^18",
+    "swiper": "^14.1.0",
     "use-scramble": "^2.2.15"
   },
   "devDependencies": {

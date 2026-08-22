@@ -54,7 +54,7 @@ const Cursor = ({ color = "white" }: CursorProps) => {
 				position: "fixed",
 				left: "0px",
 				top: "0px",
-				zIndex: 20,
+				zIndex: 9999, // custom cursor must sit above all page content
 				pointerEvents: "none", // ensure the image does not interfere with other elements
 				display: "none", // start with cursor hidden
 				filter: color === "black" ? "invert(1)" : undefined, // svg is white by default; invert for light backgrounds
