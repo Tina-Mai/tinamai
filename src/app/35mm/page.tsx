@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, motion, type Variants } from "framer-motion";
 import { ArrowLeftIcon, ArrowRightIcon } from "@heroicons/react/24/solid";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCards } from "swiper/modules";
@@ -20,6 +20,25 @@ const LOAD_WINDOW = 3; // neighbors on each side that keep their full image moun
 type View = "grid" | "stack";
 type Pic = (typeof pics)[number];
 
+const gridVariants: Variants = {
+	hidden: { opacity: 0 },
+	show: {
+		opacity: 1,
+		transition: { delayChildren: 0.08, staggerChildren: 0.04 },
+	},
+	exit: { opacity: 0, transition: { duration: 0.2 } },
+};
+
+const gridItemVariants: Variants = {
+	hidden: { opacity: 0, y: 16, scale: 0.97 },
+	show: {
+		opacity: 1,
+		y: 0,
+		scale: 1,
+		transition: { duration: 0.4, ease: "easeOut" },
+	},
+};
+
 // deterministic tilt
 function tiltFor(i: number, maxDeg: number) {
 	const n = Math.sin((i + 1) * 12.9898) * 43758.5453;
@@ -31,14 +50,21 @@ function GridCell({ pic, label, dimmed, onClick, onMouseEnter, onMouseLeave }: {
 	const [thumbLoaded, setThumbLoaded] = useState(false);
 
 	return (
-		<button onClick={onClick} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} aria-label={`view ${pic.alt} in stack`} className="group vertical gap-3 cursor-none outline-none">
+		<motion.button
+			variants={gridItemVariants}
+			onClick={onClick}
+			onMouseEnter={onMouseEnter}
+			onMouseLeave={onMouseLeave}
+			aria-label={`view ${pic.alt} in stack`}
+			className="group vertical gap-3 cursor-none outline-none"
+		>
 			<span className="self-start text-zinc-400 transition-colors duration-300 group-hover:text-zinc-800">{label}.</span>
 			<div className="flex h-48 w-full items-center justify-center">
 				<div
 					style={{ aspectRatio: `${pic.imgSrc.width} / ${pic.imgSrc.height}` }}
 					className={`relative h-full max-w-full transition-[filter] delay-150 duration-300 ${dimmed ? "blur-[2px] grayscale" : ""}`}
 				>
-					<div className={`absolute inset-0 bg-zinc-300 ${thumbLoaded ? "invisible" : "visible animate-pulse"}`} />
+					<div className={`absolute inset-0 bg-zinc-300 transition-opacity duration-500 ${thumbLoaded ? "opacity-0" : "animate-pulse opacity-100"}`} />
 					<Image
 						src={pic.imgSrc}
 						alt={pic.alt}
@@ -46,11 +72,11 @@ function GridCell({ pic, label, dimmed, onClick, onMouseEnter, onMouseLeave }: {
 						sizes="350px"
 						quality={IMAGE_QUALITY}
 						onLoad={() => setThumbLoaded(true)}
-						className={`object-contain ${thumbLoaded ? "visible" : "invisible"}`}
+						className={`object-contain transition-opacity duration-500 ${thumbLoaded ? "opacity-100" : "opacity-0"}`}
 					/>
 				</div>
 			</div>
-		</button>
+		</motion.button>
 	);
 }
 
@@ -136,10 +162,10 @@ export default function Film() {
 					{view === "grid" ? (
 						<motion.div
 							key="grid"
-							initial={{ opacity: 0, y: 12 }}
-							animate={{ opacity: 1, y: 0 }}
-							exit={{ opacity: 0, y: -8 }}
-							transition={{ duration: 0.25, ease: "easeOut" }}
+							variants={gridVariants}
+							initial="hidden"
+							animate="show"
+							exit="exit"
 							className="grid w-full grid-cols-2 gap-x-16 gap-y-16 py-14 ss:grid-cols-3 md:grid-cols-4"
 						>
 							{pics.map((p, i) => (
@@ -203,7 +229,7 @@ export default function Film() {
 									onClick={() => swiperRef.current?.slidePrev()}
 									aria-label="previous photo"
 									disabled={index === 0}
-									className={`body flex size-11 -m-3.5 cursor-none items-center justify-center outline-none transition-[color,opacity] duration-300 hover:text-zinc-500 ${
+									className={`body flex size-11 -m-[13px] cursor-none items-center justify-center outline-none transition-[color,opacity] duration-300 hover:text-zinc-500 ${
 										index === 0 ? "pointer-events-none opacity-0" : "opacity-100"
 									}`}
 								>
@@ -216,7 +242,7 @@ export default function Film() {
 									onClick={() => swiperRef.current?.slideNext()}
 									aria-label="next photo"
 									disabled={index === pics.length - 1}
-									className={`body flex size-11 -m-3.5 cursor-none items-center justify-center outline-none transition-[color,opacity] duration-300 hover:text-zinc-500 ${
+									className={`body flex size-11 -m-[13px] cursor-none items-center justify-center outline-none transition-[color,opacity] duration-300 hover:text-zinc-500 ${
 										index === pics.length - 1 ? "pointer-events-none opacity-0" : "opacity-100"
 									}`}
 								>
@@ -227,11 +253,24 @@ export default function Film() {
 					)}
 				</AnimatePresence>
 
-				{view === "grid" && <div className="flex w-full center-v text-zinc-400 italic">end of roll.</div>}
+				{view === "grid" && (
+					<AnimatePresence>
+						<motion.div
+							key="end-of-roll"
+							initial={{ opacity: 0, y: 8 }}
+							animate={{ opacity: 1, y: 0 }}
+							exit={{ opacity: 0 }}
+							transition={{ delay: 0.08 + pics.length * 0.04, duration: 0.4, ease: "easeOut" }}
+							className="flex w-full center-v italic text-zinc-400"
+						>
+							end of roll.
+						</motion.div>
+					</AnimatePresence>
+				)}
 
 				<div className={`horizontal w-full justify-between transition-opacity duration-300 ${view === "grid" ? "pointer-events-none opacity-0" : "opacity-100"}`}>
-					<ScrambleText text="cameras" />
-					<time dateTime={now?.toISOString()}>
+					<div className="text-zinc-400">35mm film</div>
+					<time dateTime={now?.toISOString()} className="text-zinc-400">
 						{now?.toLocaleTimeString(undefined, {
 							hour: "2-digit",
 							minute: "2-digit",
