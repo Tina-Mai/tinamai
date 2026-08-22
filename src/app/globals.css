@@ -14,6 +14,11 @@ body {
 	background: #17131d;
 }
 
+html:has(.film-page),
+body:has(.film-page) {
+	background: #e8e7e8;
+}
+
 @layer base {
 	.body {
 		@apply font-mono text-sm;

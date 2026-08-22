@@ -173,7 +173,7 @@ export default function Film() {
 	}, []);
 
 	return (
-		<div style={{ cursor: "none" }} className="overflow-x-clip">
+		<div style={{ cursor: "none" }} className="film-page overflow-x-clip">
 			<Cursor color="black" />
 			<div className="vertical min-h-[100dvh] w-full center-v center-h justify-between overflow-x-clip bg-light text-zinc-800 p-8 font-mono text-sm">
 				<div className="horizontal w-full justify-between">
